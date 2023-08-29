@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>guessNumber</title>
+</head>
+
+<body>
+  <span style="font-size: 20px"><b>请输入你猜测的数字</b></span>：<input type="text">
+  <div>
+      已经猜测的次数：<span id="guessCount">0</span>次
+  </div>
+  <div>
+      结果是：<span id="result"></span>
+  </div>
+
+  <button>猜一猜</button>
+
+  <script>
+      // 获取元素
+      var input = document.querySelector('input');
+      var button = document.querySelector('button');
+      var guessCount = document.querySelector('#guessCount');
+      var result = document.querySelector('#result');
+
+      // 在页面加载的时候生成1-100之间的随机整数
+      var toGuess = parseInt(Math.random() * 100);
+      console.log(toGuess);
+
+      // 为button按钮添加点击事件
+      button.onclick = function(){
+          // 首先获取用户的输入
+          var value = parseInt(input.value);
+          // 进行比较
+          if (value < toGuess) {
+              result.innerHTML = '小了';
+          } else if (value > toGuess) {
+              result.innerHTML = '大了';
+          } else {
+              result.innerHTML = '猜对了';
+          }
+
+          // 次数+1
+          var guessCountValue = parseInt(guessCount.innerHTML);
+          guessCount.innerHTML = guessCountValue + 1;
+      }
+
+  </script>
+
+</body>
+</html>

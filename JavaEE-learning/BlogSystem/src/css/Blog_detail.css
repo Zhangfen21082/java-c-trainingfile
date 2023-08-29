@@ -1,0 +1,18 @@
+/*博客详情页样式*/
+
+.container .right .blog_detail h3 {
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+
+}
+
+.container .right .blog_detail .date {
+    text-align: center;
+    color: green;
+    padding: 10px;
+}
+
+.container .right .blog_detail p {
+    text-indent: 2em;
+}
