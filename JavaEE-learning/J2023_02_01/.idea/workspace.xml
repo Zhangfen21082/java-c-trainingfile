@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27a78835-b28f-4966-b6c8-9e6d2817ee53" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/onfessionalWall.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/onfessionalWall.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../J2023_05_17/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../J2023_05_17/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +26,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
   <component name="ProjectId" id="2L84x6cVVEFLZ30CSXlrA4tzT7x" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -37,6 +40,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/百度云同步/BaiduSyncdisk/Java&C++相关课件资料/java-c-traningfile/JavaEE-learning/J2023_02_01",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,6 +66,7 @@
       <workItem from="1675239624297" duration="3262000" />
       <workItem from="1675569928067" duration="25000" />
       <workItem from="1678448534691" duration="2364000" />
+      <workItem from="1694076548075" duration="141000" />
     </task>
     <servers />
   </component>
