@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ConfessionalWall</title>
+</head>
+<body>
+
+<style>
+  .container {
+    width: 400px;
+    /*水平居中*/
+    margin: 0 auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    color: #808080;
+  }
+
+  .row {
+    height: 40px;
+    display: flex;
+    /*  水平居中*/
+    justify-content: center;
+    /*  垂直居中*/
+    align-items: center;
+  }
+
+  .row span {
+    width: 100px;
+  }
+
+  .row input {
+    width: 200px;
+    height: 25px;
+  }
+
+  .row button {
+    width: 310px;
+    height: 40px;
+    color:white;
+    background-color: orange;
+    border: none;
+
+  }
+  
+  .row button:active {
+    background-color: #666;
+  }
+
+
+</style>
+
+
+<div class="container">
+  <h1>表白墙</h1>
+  <p>（输入后点击下方按钮提交）</p>
+  <div class="row">
+    <span>姓名：</span><input type="text">
+  </div>
+
+  <div class="row">
+    <span>对谁：</span><input type="text">
+  </div>
+
+  <div class="row">
+    <span>内容：</span><input type="text">
+  </div>
+
+  <div class="row">
+    <button>提交</button>
+  </div>
+
+
+</div>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script>
+  var container = document.querySelector('.container');
+  var button = document.querySelector('button');
+  button.onclick = function () {
+    // 获取内容
+    var inputs = document.querySelectorAll('input');
+    var who = inputs[0].value;
+    var whom = inputs[1].value;
+    var content = inputs[2].value;
+    console.log(who);
+    console.log(who);
+    console.log(content);
+    if (who === '' || whom === '' || content === '') {
+      alert("有未填写项");
+      return;
+    }
+
+    // 构造出div生成发送内容
+    let newDiv = document.createElement('div');
+    newDiv.className = 'row';
+    newDiv.innerHTML = "【" + who + "】" + "对【" + whom + "】" + "说：" + content;
+    container.appendChild(newDiv);
+
+    // 清空之前输入
+    for (var i = 0; i < inputs.length; i++) {
+      inputs[i].value = '';
+    }
+
+    // 构造对象
+    let data = {
+      who: who,
+      whom, whom,
+      content, content
+    };
+
+    // 利用ajax发送请求
+    $.ajax({
+      type: 'post',
+      url : 'message',
+
+      data: JSON.stringify(data),
+      contentType: "application/json; charset=utf-8",
+      success: function(body) {
+        console.log("成功提交数据")
+      }
+    });
+  }
+
+
+</script>
+
+
+</body>
+</html>
