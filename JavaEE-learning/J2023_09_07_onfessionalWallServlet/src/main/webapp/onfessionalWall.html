@@ -119,6 +119,7 @@
       type: 'post',
       url : 'message',
 
+      // 以下是body内容
       data: JSON.stringify(data),
       contentType: "application/json; charset=utf-8",
       success: function(body) {
@@ -126,6 +127,28 @@
       }
     });
   }
+
+  // 在页面加载时就获取服务器数据
+  function getMessages() {
+    $.ajax({
+      type: 'get',
+      url: 'message',
+      success: function (body) {
+        // body就是响应的body内容，json数组
+        // JQuery可以很智能的我们将json数组解析为js对象数组（但注意设置Content-Type为application/json）
+        let contatiner = document.querySelector('.container')
+        for (let i = 0; i < body.length; i++) {
+          let message = body[i];
+          // 构造元素
+          let newDiv = document.createElement('div');
+          newDiv.className = 'row';
+          newDiv.innerHTML = "【" + message.who + "】" + "对【" + message.whom + "】" + "说：" + message.content;
+          contatiner.appendChild(newDiv);
+        }
+      }
+    })
+  }
+  getMessages();
 
 
 </script>
