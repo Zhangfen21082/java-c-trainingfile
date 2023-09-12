@@ -65,11 +65,7 @@ public class MessageServlet extends HttpServlet {
     // 从数据库查询数据
     private List<Message> load() throws SQLException {
         // 先得有一个数据源
-        DataSource dataSource = new MysqlDataSource();
-        // 设置url，user和password
-        ((MysqlDataSource)dataSource).setUrl("jdbc:mysql://127.0.0.1:3306/confession_wall?characterEncoding=utf8&useSSL=false&serverTimezone=UTC");
-        ((MysqlDataSource)dataSource).setUser("root");
-        ((MysqlDataSource)dataSource).setPassword("zxsgdsg6125057");
+        DataSource dataSource = DBUtil.getDataSource();
         // 与服务器建立连接
         Connection connection = dataSource.getConnection();
 
@@ -103,11 +99,8 @@ public class MessageServlet extends HttpServlet {
     // 保存数据到数据库
     private void save(Message message) throws SQLException {
         // 先得有一个数据源
-        DataSource dataSource = new MysqlDataSource();
-        // 设置url，user和password
-        ((MysqlDataSource)dataSource).setUrl("jdbc:mysql://127.0.0.1:3306/confession_wall?characterEncoding=utf8&useSSL=false&serverTimezone=UTC");
-        ((MysqlDataSource)dataSource).setUser("root");
-        ((MysqlDataSource)dataSource).setPassword("zxsgdsg6125057");
+        DataSource dataSource = DBUtil.getDataSource();
+
         // 与服务器建立连接
         Connection connection = dataSource.getConnection();
         System.out.println(connection);
