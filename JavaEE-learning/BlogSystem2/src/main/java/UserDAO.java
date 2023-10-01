@@ -6,7 +6,7 @@ import java.sql.SQLException;
 // 针对用户表相关操作
 public class UserDAO {
 
-    // 根据用户名查询用户 (登录)
+    // 根据用户名查询用户
     public User selectByUserName(String userName) throws SQLException {
         Connection connection = null;
         PreparedStatement statement = null;
@@ -35,7 +35,7 @@ public class UserDAO {
         return null;
     }
 
-    // 根据用户ID查询用户 (获取用户信息)
+    // 根据userId查询用户
     public User selectByUserId(int userId) throws SQLException {
 
         Connection connection = null;

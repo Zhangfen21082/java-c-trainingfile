@@ -8,7 +8,7 @@ import java.util.List;
 
 // 针对博客表的一些操作
 public class BlogDAO  {
-    // 插入博客到数据库中 (发布博客)
+    // 插入博客到数据库中
     public void insert(Blog blog) throws SQLException {
         Connection connection = null;
         PreparedStatement statement = null;
@@ -37,7 +37,7 @@ public class BlogDAO  {
 
     }
 
-    // 根据博客id查询指定博客 (博客详情页)
+    // 根据blogId查询指定博客
     public Blog selectById(int blogId) throws SQLException {
         Connection connection = null;
         PreparedStatement statement = null;
@@ -58,10 +58,7 @@ public class BlogDAO  {
                 blog.setContent(resultSet.getString("content"));
                 blog.setPostTime(resultSet.getTimestamp("postTime"));
                 blog.setUserId(resultSet.getInt("userId"));
-
-
                 return blog;
-
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -71,7 +68,7 @@ public class BlogDAO  {
         return null;
     }
 
-    // 查询博客列表 (博客列表页)
+    // 查询所有博客
     public List<Blog> selectAll() throws SQLException {
         List<Blog> blogs = new ArrayList<>();
         Connection connection = null;
@@ -109,7 +106,7 @@ public class BlogDAO  {
         return blogs;
     }
 
-    // 根据博客id删除博客 (删除博客)
+    // 根据blogId删除博客 (删除博客)
     public void delete (int blogId) throws SQLException {
         Connection connection = null;
         PreparedStatement statement = null;

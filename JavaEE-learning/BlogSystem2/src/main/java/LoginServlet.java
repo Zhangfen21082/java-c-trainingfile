@@ -14,6 +14,7 @@ import java.util.Map;
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
     @Override
+    // 登录功能
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // 获取用户名和密码
         req.setCharacterEncoding("utf-8");
@@ -42,29 +43,14 @@ public class LoginServlet extends HttpServlet {
             e.printStackTrace();
         }
 
-        // 如果正确则创建一个会话对象
-        // 保证在访问其他页面时可以直接判定是哪个用户在访问
+        // 如果正确则创建一个会话对象,保证在访问其他页面时可以直接判定是哪个用户在访问
         HttpSession session = req.getSession(true);
         session.setAttribute("user", user);
-
-        // 然后下面让客户端重定向即可
-        /*需要注意，重定向操作对ajax请求无效，因此需要给页面返回一个
-        json响应，包含重定向URL信息，时客户端进行重定向
-         */
-//        resp.setContentType("application/json");
-//        String redirectUrl = req.getContextPath() + "/BlogListPage.html";
-//        Map<String, String> responseMap = new HashMap<>();
-//        responseMap.put("redirectUrl", redirectUrl);
-//        ObjectMapper objectMapper = new ObjectMapper();
-//        resp.getWriter().write(objectMapper.writeValueAsString(responseMap));
-
-        // resp.sendRedirect("BlogListPage.html");
-
     }
 
     @Override
+    // 防止未登录直接访问
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        // 判定登录状态
         // 获取会话
         HttpSession session = req.getSession(false);
         // 没有会话则为未登录
