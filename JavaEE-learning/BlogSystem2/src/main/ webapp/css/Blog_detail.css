@@ -16,3 +16,12 @@
 .container .right .blog_detail p {
     text-indent: 2em;
 }
+
+.nav .deleting {
+    height: 30px;
+    background-color: indianred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}

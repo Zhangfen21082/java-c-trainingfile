@@ -17,7 +17,7 @@
     <!--  用于占位  -->
     <div class="space"></div>
     <a href="BlogListPage.html">博客主页</a>
-    <a href="#">注销账户</a>
+    <a href="logout">注销账户</a>
     <div class="creating"><a href="BlogEditPage.html">开始创作</a></div>
 
 </div>
@@ -30,7 +30,7 @@
             <!-- 用户头像 -->
             <img src="image/头像.png" alt="">
             <!-- 用户名字 -->
-            <h3>一枚小菜鸡</h3>
+            <h3></h3>
             <!-- Github地址 -->
             <a href="#">进入Github主页</a>
             <div class="counter">
@@ -116,8 +116,20 @@
     getBlogs();
 
     // 获取登录状态判断是否登录
-
     getLoginStatus();
+
+    // 针对博客列表页获取当前用户的登录信息
+    function getUserInfo() {
+        $.ajax({
+            type: 'get',
+            url: 'userInfo',
+            success: function(body) {
+                let h3 = document.querySelector('.left>.card>h3');
+                h3.innerHTML = body.userName;
+            }
+        });
+    }
+    getUserInfo();
 </script>
 
 </body>

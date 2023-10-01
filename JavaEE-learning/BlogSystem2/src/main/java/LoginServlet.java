@@ -75,8 +75,8 @@ public class LoginServlet extends HttpServlet {
 
         // 如果有会话则已经登录，获取用户
         User user = (User)session.getAttribute("user");
+        // 这里是为了结合注销逻辑，注销时会直接删除user
         if (user == null) {
-            // 虽然有会哈u，但是没有user对象，一概认为是未登录状态
             resp.setStatus(403);
             return;
         }
