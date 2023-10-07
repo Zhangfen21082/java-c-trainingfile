@@ -37,4 +37,9 @@
         </dependency>
     </dependencies>
 
+    <packaging>war</packaging>
+    <build>
+        <finalName>BlogSystem2</finalName>
+    </build>
+
 </project>
