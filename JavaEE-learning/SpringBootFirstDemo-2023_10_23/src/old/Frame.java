@@ -3,8 +3,8 @@ package old;
 public class Frame {
     private Bottom bottom;
 
-    public Frame() {
-        bottom = new Bottom();
+    public Frame(int size) {
+        bottom = new Bottom(size);
     }
 
     public void init() {

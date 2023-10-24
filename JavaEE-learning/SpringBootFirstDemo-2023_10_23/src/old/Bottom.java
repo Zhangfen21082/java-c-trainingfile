@@ -3,8 +3,8 @@ package old;
 public class Bottom {
     private Tire tire;
 
-    public Bottom() {
-        tire = new Tire();
+    public Bottom(int size) {
+        tire = new Tire(size); // 修改
     }
 
     public void init() {

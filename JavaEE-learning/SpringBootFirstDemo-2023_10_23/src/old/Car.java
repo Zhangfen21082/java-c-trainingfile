@@ -3,8 +3,8 @@ package old;
 public class Car {
     private Frame frame;
 
-    public Car() {
-        frame = new Frame();
+    public Car(int size) {
+        frame = new Frame(size);
     }
     public void init() {
         // 车需要依赖车身
