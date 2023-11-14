@@ -1,5 +1,6 @@
-package com.example.springbootfirst2023_11_12;
+package com.example.springbootfirst2023_11_12.controller;
 
+import com.example.springbootfirst2023_11_12.ListTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
