@@ -1,15 +1,22 @@
 package com.example.demo.controller;
 import com.example.demo.model.User;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import java.io.File;
+import java.io.IOException;
+import java.util.UUID;
 
 
 @RestController // @RestController = @ResponseBody + @Controller
 @RequestMapping("/user")
 public class UserController {
 
-    @RequestMapping("/showtime")
-    public String sayi(@RequestParam("t1") Integer startTime, @RequestParam("t2") Integer endTime) {
-        int Time = endTime - startTime;
-        return "耗时：" + Time + "s";
+    @RequestMapping("/getcookie")
+    public String getCookie(HttpServletRequest request) {
+        Cookie[] cookies = request.getCookies();
+
     }
 }
