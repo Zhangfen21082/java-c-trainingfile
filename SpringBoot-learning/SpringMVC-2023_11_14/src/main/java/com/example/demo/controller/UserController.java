@@ -1,22 +1,24 @@
 package com.example.demo.controller;
-import com.example.demo.model.User;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
-import java.io.File;
-import java.io.IOException;
-import java.util.UUID;
 
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.HashMap;
 
 @RestController // @RestController = @ResponseBody + @Controller
 @RequestMapping("/user")
+
 public class UserController {
+    @RequestMapping("/json")
+    public HashMap<String, String> test() {
+        HashMap<String, String> map = new HashMap<>();
+        map.put("key1", "value1");
+        map.put("key2", "value2");
+        map.put("key3", "value3");
+        map.put("key4", "value4");
 
-    @RequestMapping("/getcookie")
-    public String getCookie(HttpServletRequest request) {
-        Cookie[] cookies = request.getCookies();
-
+        return map;
     }
+
 }
