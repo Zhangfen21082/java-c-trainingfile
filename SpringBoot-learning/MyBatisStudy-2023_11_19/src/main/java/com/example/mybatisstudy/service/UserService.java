@@ -17,5 +17,9 @@ public class UserService {
         return userMapper.getUserById(id);
     }
 
+    public Integer addUser(UserInfo userInfo) {
+        return userMapper.addUser(userInfo);
+    }
+
 
 }
