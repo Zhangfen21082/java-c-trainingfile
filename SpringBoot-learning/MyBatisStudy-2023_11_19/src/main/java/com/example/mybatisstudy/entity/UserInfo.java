@@ -1,7 +1,10 @@
 package com.example.mybatisstudy.entity;
 
+import lombok.Data;
+
 import java.time.LocalDateTime;
 
+@Data
 public class UserInfo {
     private int id;
     private String username;
