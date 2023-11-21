@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -13,6 +14,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
+@Transactional
 class UserMapperTest {
     @Autowired
     private UserMapper userMapper;
@@ -40,5 +42,12 @@ class UserMapperTest {
 
         int result = userMapper.addUser(userInfo);
         Assertions.assertEquals(1, result);
+    }
+
+    @Test
+    void updateUserNameById() {
+        int result = userMapper.updateUserNameById(2, "张奇");
+        Assertions.assertEquals(1, result);
+
     }
 }

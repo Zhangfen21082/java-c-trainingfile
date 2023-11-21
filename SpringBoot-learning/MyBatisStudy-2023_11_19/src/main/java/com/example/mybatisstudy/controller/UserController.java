@@ -5,6 +5,7 @@ import com.example.mybatisstudy.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDateTime;
@@ -23,16 +24,25 @@ public class UserController {
         return userService.getUserById(id);
     }
 
-    @ RequestMapping("/adduser")
+    @RequestMapping("/adduser")
     public String addUser(@RequestBody UserInfo userInfo) {
         userInfo.setCreatetime(LocalDateTime.now());
         userInfo.setUpdatetime(LocalDateTime.now());
         int res = userService.addUser(userInfo);
         if (res == 1) {
-            return "插入成功";
+            return "插入成功" + userInfo.getId();
         }
         return "插入失败";
 
+    }
 
+    @RequestMapping("/update")
+    public String updateUserNameById(Integer id, @RequestParam("newname") String newUserName) {
+        int res = userService.updateUserNameById(id, newUserName);
+        if (res == 1) {
+            return "更改成功";
+        }
+
+        return "更改失败";
     }
 }

@@ -21,5 +21,9 @@ public class UserService {
         return userMapper.addUser(userInfo);
     }
 
+    public Integer updateUserNameById(Integer id, String newUserName) {
+        return userMapper.updateUserNameById(id, newUserName);
+    }
+
 
 }

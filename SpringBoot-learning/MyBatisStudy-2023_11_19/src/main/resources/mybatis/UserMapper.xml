@@ -9,9 +9,13 @@
         select * from userinfo
     </select>
 
-    <insert id="addUser">
+    <insert id="addUser" useGeneratedKeys="true" keyProperty="id">
         insert into userinfo(username,password,createtime,updatetime)
         values(#{username},#{password},#{createtime},#{updatetime})
     </insert>
+
+    <update id="updateUserNameById">
+        update userinfo set username=#{newUserName} where id=#{id}
+    </update>
 
 </mapper>

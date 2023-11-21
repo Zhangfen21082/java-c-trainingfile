@@ -25,4 +25,9 @@ public interface UserMapper {
      */
 
     int addUser(UserInfo userInfo);
+
+    /**
+     * 修改用户名
+     */
+    int updateUserNameById(Integer id, String newUserName);
 }
