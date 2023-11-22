@@ -30,4 +30,9 @@ public interface UserMapper {
      * 修改用户名
      */
     int updateUserNameById(Integer id, String newUserName);
+
+    /**
+     * like查询
+     */
+    List<UserInfo> getUserByName(String UserName);
 }

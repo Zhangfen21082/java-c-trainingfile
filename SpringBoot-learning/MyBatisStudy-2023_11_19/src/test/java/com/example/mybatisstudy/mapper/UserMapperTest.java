@@ -50,4 +50,10 @@ class UserMapperTest {
         Assertions.assertEquals(1, result);
 
     }
+
+    @Test
+    void getUserByName() {
+        List<UserInfo> list = userMapper.getUserByName("李");
+        System.out.println(list);
+    }
 }

@@ -18,4 +18,8 @@
         update userinfo set username=#{newUserName} where id=#{id}
     </update>
 
+    <select id="getUserByName" resultType="com.example.mybatisstudy.entity.UserInfo">
+        select * from userinfo where username like concat('%', #{username}, '%');
+    </select>
+
 </mapper>
