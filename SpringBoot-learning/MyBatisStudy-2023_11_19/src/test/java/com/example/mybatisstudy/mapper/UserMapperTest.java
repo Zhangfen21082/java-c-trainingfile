@@ -35,7 +35,7 @@ class UserMapperTest {
     @Test
     void addUser() {
         UserInfo userInfo = new UserInfo();
-        userInfo.setUsername("张三");
+        userInfo.setUN("张三");
         userInfo.setPassword("123213");
         userInfo.setCreatetime(LocalDateTime.now());
         userInfo.setUpdatetime(LocalDateTime.now());

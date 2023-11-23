@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybati s.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mybatisstudy.mapper.ArticleMapper">
+    <select id="getById" resultType="com.example.mybatisstudy.entity.view.ArticleInfoView">
+        select article.*, user.username from articleinfo article left join userinfo user on user.id=article.id where article.id=${id}
+    </select>
+
+</mapper>

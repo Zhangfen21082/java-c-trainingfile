@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybati s.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.mybatisstudy.mapper.UserMapper">
+
+
     <select id="getUserById" resultType="com.example.mybatisstudy.entity.UserInfo">
-        select * from userinfo where id = #{id}
+        select id, username as UN, password, photo, createtime, updatetime, state from userinfo where id = #{id}
     </select>
 
     <select id="getALL" resultType="com.example.mybatisstudy.entity.UserInfo">
