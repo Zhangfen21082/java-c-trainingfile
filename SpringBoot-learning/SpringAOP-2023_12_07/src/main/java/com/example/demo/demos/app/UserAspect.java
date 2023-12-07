@@ -1,9 +1,7 @@
 package com.example.demo.demos.app;
 
-import org.aspectj.lang.annotation.After;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
 @Aspect // 切面类
@@ -14,15 +12,16 @@ public class UserAspect {
     @Pointcut("execution(* com.example.demo.demos.controller.UserController.*(..))")
     public void pointcut() {}
 
-    // 通知：定义通知
+    // 环绕通知：注意具有返回值和参数
+    @Around("pointcut()")
+    public Object aroundAdvice(ProceedingJoinPoint joinPoint) throws Throwable {
+        System.out.println("进入环绕通知");
+        Object obj = null;
 
-    @Before("pointcut()") // 针对pointcut这个拦截规则
-    public void beforeAdvice() {
-        System.out.println("执行了前置通知");
+        // 执行目标方法
+        obj = joinPoint.proceed();
+        System.out.println("退出环绕通知");
+        return obj;
     }
 
-    @After("pointcut()") // 针对pointcut这个拦截规则
-    public void afterAdvice() {
-        System.out.println("执行了后置通知");
-    }
 }
