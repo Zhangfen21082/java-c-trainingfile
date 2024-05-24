@@ -10,7 +10,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class DBUtil {
-    private static final String URL = "jdbc:mysql://127.0.0.1:3306/oj_database?characterEncoding=utf8&useSSL=false";
+    private static final String URL = "jdbc:mysql://127.0.0.1:3306/oj_database?characterEncoding=utf8&allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC";
+
     private static final String USERNAME = "root";
     private static final String PASSWORD = "zxsgdsg6125057";
 
@@ -21,7 +22,7 @@ public class DBUtil {
                 if(dataSource == null) {
                     MysqlDataSource mysqlDataSource = new MysqlDataSource();
                     mysqlDataSource.setUrl(URL);
-                    mysqlDataSource.setUrl(USERNAME);
+                    mysqlDataSource.setUser(USERNAME);
                     mysqlDataSource.setPassword(PASSWORD);
                     dataSource = mysqlDataSource;
                 }
@@ -54,7 +55,7 @@ public class DBUtil {
 
         if (connection != null) {
             try {
-                statement.close();
+                connection.close();
             } catch (SQLException e) {
                 e.printStackTrace();
             }
