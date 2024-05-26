@@ -1,6 +1,8 @@
 package compile;
 
 import java.io.File;
+import java.util.UUID;
+
 import Util.FileUtil;
 import Util.CommandUtils;
 
@@ -10,17 +12,27 @@ import Util.CommandUtils;
 public class Task {
 
     // 临时文件所在目录
-    private static final String WORK_DIR = "./tmp/";
+    private String WORK_DIR = null;
     // 代码类名
-    private static final String CLASS = "Solution";
+    private String CLASS = null;
     // 代码编译代码文件名
-    private static final String CODE = WORK_DIR + "Solution.java";
+    private String CODE = null;
     // 编译错误信息文件名
-    private static final String COMPILE_ERROR = WORK_DIR + "compileError.txt";
+    private String COMPILE_ERROR = null;
     // 标准输出文件名
-    private static final String STDOUT = WORK_DIR + "stdout.txt";
+    private String STDOUT = null;
     // 标准错误文件名
-    private static final String STDERR = WORK_DIR + "stderr.txt";
+    private String STDERR = null;
+
+
+    public Task(){
+        WORK_DIR = "./tmp/" + UUID.randomUUID().toString() + "/";
+        CLASS = "Solution";
+        CODE = WORK_DIR + "Solution.java";
+        COMPILE_ERROR = WORK_DIR + "compileError.txt";
+        STDOUT = WORK_DIR + "stdout.txt";
+        STDERR = WORK_DIR + "stderr.txt";
+    }
 
     /**
      * 参数：待编译和运行的源代码，实体类为Question

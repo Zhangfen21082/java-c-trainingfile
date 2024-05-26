@@ -1,6 +1,9 @@
 package api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import compile.Answer;
+import compile.Question;
+import compile.Task;
 import dao.Problem;
 import dao.ProblemDao;
 
@@ -13,6 +16,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.sql.SQLException;
+
+import Exception.ProblemNotFoundException;
+import Exception.CodeInvalidityException;
 
 @WebServlet("/compile")
 public class CompileServlet extends HttpServlet{
@@ -30,6 +36,11 @@ public class CompileServlet extends HttpServlet{
     private ObjectMapper objectMapper = new ObjectMapper();
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("current path: " + System.getProperty("user.dir"));
+        resp.setStatus(200);
+        resp.setContentType("application/json;charset=utf-8");
+        CompileRequest compileRequest = null;
+        CompileResponse compileResponse = new CompileResponse();
         /*
             1：先读取请求的正文，按照json格式进行解析
             2：根据id从数据库中查找题目详情，得到测试用例代码
@@ -38,29 +49,55 @@ public class CompileServlet extends HttpServlet{
             5：根据Task运行结果，包装为一个HTTP响应
          */
 
-        // 1
-        String body = readBody(req);
-        CompileRequest compileRequest = objectMapper.readValue(body, CompileRequest.class);
-        // 2
-        ProblemDao problemDao = new ProblemDao();
-        // 测试用例代码
-        StringBuilder testCode = new StringBuilder();
-        // 用户提交代码
-        StringBuilder requestCode = new StringBuilder();
         try {
+            // 1
+            String body = readBody(req);
+            compileRequest = objectMapper.readValue(body, CompileRequest.class);
+            // 2
+            ProblemDao problemDao = new ProblemDao();
+            // 测试用例代码
+            StringBuilder testCode = new StringBuilder();
+            // 用户提交代码
+            StringBuilder requestCode = new StringBuilder();
+
             Problem problem = problemDao.selectOne(compileRequest.id);
+            if (problem == null) {
+                throw new ProblemNotFoundException();
+            }
 
             testCode.append(problem.getTestCode());
             requestCode.append(compileRequest.code);
 
+            // 3
+            String finalCode = mergeCode(testCode.toString(), requestCode.toString());
+            if(finalCode == null) {
+                throw new CodeInvalidityException();
+            }
+            System.out.println(finalCode);
+
+            // 4
+            Task task = new Task();
+            Question question = new Question();
+            question.setCode(finalCode);
+            Answer answer = task.compileAndRun(question);
+
+            // 5
+            compileResponse.error = answer.getError();
+            compileResponse.reason = answer.getReason();
+            compileResponse.stdout = answer.getStdout();
 
         } catch (SQLException e) {
             e.printStackTrace();
+        } catch (ProblemNotFoundException e) {
+            compileResponse.error = 3;
+            compileResponse.reason = compileRequest.id + "号题目未找到";
+        } catch (CodeInvalidityException e) {
+            compileResponse.error = 3;
+            compileResponse.reason = "用户提交代码非法";
+        } finally {
+            String respString = objectMapper.writeValueAsString(compileResponse);
+            resp.getWriter().write(respString);
         }
-        // 3
-        String finalCode = mergeCode(testCode.toString(), requestCode.toString());
-        System.out.println(finalCode);
-
 
     }
 
