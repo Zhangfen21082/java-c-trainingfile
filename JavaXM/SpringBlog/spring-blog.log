@@ -1,0 +1,24 @@
+2024-05-29 10:50:36.781  INFO 10176 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 10176 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
+2024-05-29 10:50:36.782  INFO 10176 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-05-29 10:50:37.023  WARN 10176 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.springblog]' package. Please check your configuration.
+2024-05-29 10:50:37.167  INFO 10176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-05-29 10:50:37.171  INFO 10176 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-29 10:50:37.171  INFO 10176 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-05-29 10:50:37.220  INFO 10176 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-29 10:50:37.220  INFO 10176 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 422 ms
+2024-05-29 10:50:37.299  INFO 10176 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-05-29 10:50:37.408  INFO 10176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-05-29 10:50:37.413  INFO 10176 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 0.802 seconds (JVM running for 1.262)
+2024-05-29 10:59:59.939  INFO 3448 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 3448 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
+2024-05-29 10:59:59.939  INFO 3448 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-05-29 11:00:00.171  WARN 3448 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.springblog]' package. Please check your configuration.
+2024-05-29 11:00:00.301  INFO 3448 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-05-29 11:00:00.305  INFO 3448 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-29 11:00:00.305  INFO 3448 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-05-29 11:00:00.353  INFO 3448 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-29 11:00:00.353  INFO 3448 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 397 ms
+2024-05-29 11:00:00.535  INFO 3448 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-05-29 11:00:00.540  INFO 3448 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 0.783 seconds (JVM running for 1.313)
+2024-05-29 11:00:40.792  INFO 3448 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-29 11:00:40.793  INFO 3448 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-29 11:00:40.794  INFO 3448 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
