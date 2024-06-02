@@ -1,24 +1,80 @@
-2024-05-29 10:50:36.781  INFO 10176 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 10176 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
-2024-05-29 10:50:36.782  INFO 10176 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-05-29 10:50:37.023  WARN 10176 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.springblog]' package. Please check your configuration.
-2024-05-29 10:50:37.167  INFO 10176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-05-29 10:50:37.171  INFO 10176 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-05-29 10:50:37.171  INFO 10176 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2024-05-29 10:50:37.220  INFO 10176 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-05-29 10:50:37.220  INFO 10176 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 422 ms
-2024-05-29 10:50:37.299  INFO 10176 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2024-05-29 10:50:37.408  INFO 10176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-05-29 10:50:37.413  INFO 10176 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 0.802 seconds (JVM running for 1.262)
-2024-05-29 10:59:59.939  INFO 3448 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 3448 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
-2024-05-29 10:59:59.939  INFO 3448 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-05-29 11:00:00.171  WARN 3448 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.springblog]' package. Please check your configuration.
-2024-05-29 11:00:00.301  INFO 3448 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-05-29 11:00:00.305  INFO 3448 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-05-29 11:00:00.305  INFO 3448 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2024-05-29 11:00:00.353  INFO 3448 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-05-29 11:00:00.353  INFO 3448 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 397 ms
-2024-05-29 11:00:00.535  INFO 3448 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-05-29 11:00:00.540  INFO 3448 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 0.783 seconds (JVM running for 1.313)
-2024-05-29 11:00:40.792  INFO 3448 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-05-29 11:00:40.793  INFO 3448 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-05-29 11:00:40.794  INFO 3448 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-06-02 10:27:54.780  INFO 3388 --- [main] c.e.springblog.mapper.BlogMapperTest     : Starting BlogMapperTest using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 3388 (started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
+2024-06-02 10:27:54.783  INFO 3388 --- [main] c.e.springblog.mapper.BlogMapperTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-02 10:27:56.013  INFO 3388 --- [main] c.e.springblog.mapper.BlogMapperTest     : Started BlogMapperTest in 1.428 seconds (JVM running for 1.991)
+2024-06-02 10:27:56.212  INFO 3388 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-02 10:27:56.954  INFO 3388 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-02 10:27:57.021  INFO 3388 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-02 10:27:57.022  INFO 3388 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-02 10:29:02.073  INFO 25548 --- [main] c.e.springblog.mapper.BlogMapperTest     : Starting BlogMapperTest using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 25548 (started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
+2024-06-02 10:29:02.073  INFO 25548 --- [main] c.e.springblog.mapper.BlogMapperTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-02 10:29:03.122  INFO 25548 --- [main] c.e.springblog.mapper.BlogMapperTest     : Started BlogMapperTest in 1.222 seconds (JVM running for 1.708)
+2024-06-02 10:29:03.239  INFO 25548 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-02 10:29:03.333  INFO 25548 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-02 10:29:03.465  INFO 25548 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-02 10:29:03.470  INFO 25548 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-02 10:30:11.653  INFO 24660 --- [main] c.e.springblog.mapper.BlogMapperTest     : Starting BlogMapperTest using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 24660 (started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
+2024-06-02 10:30:11.654  INFO 24660 --- [main] c.e.springblog.mapper.BlogMapperTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-02 10:30:12.641  INFO 24660 --- [main] c.e.springblog.mapper.BlogMapperTest     : Started BlogMapperTest in 1.146 seconds (JVM running for 1.623)
+2024-06-02 10:30:12.769  INFO 24660 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-02 10:30:12.885  INFO 24660 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-02 10:30:12.938  INFO 24660 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-02 10:30:12.943  INFO 24660 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-02 10:32:28.698  INFO 27508 --- [main] c.e.springblog.mapper.BlogMapperTest     : Starting BlogMapperTest using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 27508 (started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
+2024-06-02 10:32:28.699  INFO 27508 --- [main] c.e.springblog.mapper.BlogMapperTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-02 10:32:29.751  INFO 27508 --- [main] c.e.springblog.mapper.BlogMapperTest     : Started BlogMapperTest in 1.223 seconds (JVM running for 1.744)
+2024-06-02 10:32:29.877  INFO 27508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-02 10:32:29.992  INFO 27508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-02 10:32:30.066  INFO 27508 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-02 10:32:30.070  INFO 27508 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-02 10:32:38.051  INFO 27596 --- [main] c.e.springblog.mapper.BlogMapperTest     : Starting BlogMapperTest using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 27596 (started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
+2024-06-02 10:32:38.051  INFO 27596 --- [main] c.e.springblog.mapper.BlogMapperTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-02 10:32:39.030  INFO 27596 --- [main] c.e.springblog.mapper.BlogMapperTest     : Started BlogMapperTest in 1.14 seconds (JVM running for 1.623)
+2024-06-02 10:32:39.139  INFO 27596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-02 10:32:39.221  INFO 27596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-02 10:32:39.258  INFO 27596 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-02 10:32:39.262  INFO 27596 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-02 10:33:26.079  INFO 26740 --- [main] c.e.springblog.mapper.BlogMapperTest     : Starting BlogMapperTest using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 26740 (started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
+2024-06-02 10:33:26.080  INFO 26740 --- [main] c.e.springblog.mapper.BlogMapperTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-02 10:33:27.063  INFO 26740 --- [main] c.e.springblog.mapper.BlogMapperTest     : Started BlogMapperTest in 1.148 seconds (JVM running for 1.622)
+2024-06-02 10:35:22.752  INFO 3184 --- [main] c.e.springblog.mapper.BlogMapperTest     : Starting BlogMapperTest using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 3184 (started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
+2024-06-02 10:35:22.752  INFO 3184 --- [main] c.e.springblog.mapper.BlogMapperTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-02 10:35:23.764  INFO 3184 --- [main] c.e.springblog.mapper.BlogMapperTest     : Started BlogMapperTest in 1.176 seconds (JVM running for 1.672)
+2024-06-02 10:35:23.897  INFO 3184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-02 10:35:23.980  INFO 3184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-02 10:35:24.048  INFO 3184 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-02 10:35:24.052  INFO 3184 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-02 10:36:22.240  INFO 19660 --- [main] c.e.springblog.mapper.BlogMapperTest     : Starting BlogMapperTest using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 19660 (started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
+2024-06-02 10:36:22.241  INFO 19660 --- [main] c.e.springblog.mapper.BlogMapperTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-02 10:36:23.219  INFO 19660 --- [main] c.e.springblog.mapper.BlogMapperTest     : Started BlogMapperTest in 1.141 seconds (JVM running for 1.643)
+2024-06-02 10:36:23.345  INFO 19660 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-02 10:36:23.432  INFO 19660 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-02 10:36:23.471  INFO 19660 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-02 10:36:23.474  INFO 19660 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-02 10:37:01.353  INFO 26752 --- [main] c.e.springblog.mapper.BlogMapperTest     : Starting BlogMapperTest using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 26752 (started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
+2024-06-02 10:37:01.354  INFO 26752 --- [main] c.e.springblog.mapper.BlogMapperTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-02 10:37:02.321  INFO 26752 --- [main] c.e.springblog.mapper.BlogMapperTest     : Started BlogMapperTest in 1.128 seconds (JVM running for 1.608)
+2024-06-02 10:37:02.455  INFO 26752 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-02 10:37:02.541  INFO 26752 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-02 10:37:02.605  INFO 26752 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-02 10:37:02.609  INFO 26752 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-02 10:38:41.439  INFO 6064 --- [main] c.e.springblog.mapper.BlogMapperTest     : Starting BlogMapperTest using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 6064 (started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
+2024-06-02 10:38:41.440  INFO 6064 --- [main] c.e.springblog.mapper.BlogMapperTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-02 10:38:42.407  INFO 6064 --- [main] c.e.springblog.mapper.BlogMapperTest     : Started BlogMapperTest in 1.134 seconds (JVM running for 1.625)
+2024-06-02 10:38:42.531  INFO 6064 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-02 10:38:42.611  INFO 6064 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-02 10:38:42.672  INFO 6064 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-02 10:38:42.677  INFO 6064 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-02 10:48:05.382  INFO 928 --- [main] c.e.springblog.mapper.BlogMapperTest     : Starting BlogMapperTest using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 928 (started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
+2024-06-02 10:48:05.382  INFO 928 --- [main] c.e.springblog.mapper.BlogMapperTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-02 10:48:06.388  INFO 928 --- [main] c.e.springblog.mapper.BlogMapperTest     : Started BlogMapperTest in 1.178 seconds (JVM running for 1.678)
+2024-06-02 10:48:06.543  INFO 928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-02 10:48:06.628  INFO 928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-02 10:48:06.662  INFO 928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-02 10:48:06.666  INFO 928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-02 10:48:18.192  INFO 13040 --- [main] c.e.springblog.mapper.BlogMapperTest     : Starting BlogMapperTest using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 13040 (started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
+2024-06-02 10:48:18.193  INFO 13040 --- [main] c.e.springblog.mapper.BlogMapperTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-02 10:48:19.179  INFO 13040 --- [main] c.e.springblog.mapper.BlogMapperTest     : Started BlogMapperTest in 1.144 seconds (JVM running for 1.65)
+2024-06-02 10:48:19.290  INFO 13040 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-02 10:48:19.371  INFO 13040 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-02 10:48:19.410  INFO 13040 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-02 10:48:19.414  INFO 13040 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
