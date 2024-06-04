@@ -40,19 +40,9 @@
         </div>
         <div class="right">
             <div class="content">
-                <div class="title">我的第一篇博客</div>
-                <div class="date">2021-06-02</div>
-                <div class="detail">
-                    <p>从今天开始, 好好学习~Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cumque alias
-                        laborum numquam aliquam? Ipsam aliquam dolorem officiis! Magni pariatur officiis iusto? Et unde
-                        quo fuga, minus deserunt architecto eligendi.</p>
-                    <p>从今天开始, 好好学习~Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cumque alias
-                        laborum numquam aliquam? Ipsam aliquam dolorem officiis! Magni pariatur officiis iusto? Et unde
-                        quo fuga, minus deserunt architecto eligendi.</p>
-                    <p>从今天开始, 好好学习~Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cumque alias
-                        laborum numquam aliquam? Ipsam aliquam dolorem officiis! Magni pariatur officiis iusto? Et unde
-                        quo fuga, minus deserunt architecto eligendi.</p>
-                </div>
+                <div class="title"></div>
+                <div class="date"></div>
+                <div class="detail"></div>
                 <div class="operating">
                     <button onclick="window.location.href='blog_update.html'">编辑</button>
                     <button onclick="deleteBlog()">删除</button>
@@ -70,7 +60,39 @@
     <script src="blog-editormd/editormd.js"></script>
     <script src="js/common.js"></script>
     <script>
-        
+        //获取博客详情
+        $.ajax({
+            type: "get",
+            url: "/blog/getblogdetail" + location.search,
+            success: function (result) {
+                if (result.code == 200 && result.data != null) {
+                    var blog = result.data;
+                    console.log(blog.loginUser)
+                    $(".right .content .title").text(blog.title);
+                    $(".right .content .date").text(blog.createTime);
+                    $(".right .content .detail").text(blog.content);
+                    // editormd.markdownToHTML("detail", {
+                    //     markdown: blog.content,
+                    // });
+                    //是否显示编辑/删除按钮
+                    if(blog.loginUser){
+                        console.log("显示编辑/删除");
+                        var html = "";
+                        html += '<div class="operating">';
+                        html += '<button onclick="window.location.href=\'blog_update.html'+location.search+'\'">编辑</button>';
+                        html += '<button onclick="deleteBlog()">删除</button>';
+                        html += '</div>';
+
+                        $(".content").append(html);
+                    }
+                }
+            },
+            error: function (error) {
+                if (error != null && error.status == 401) {
+                    location.href = "blog_login.html";
+                }
+            }
+        });
         //显示博客作者信息
         var userUrl = "/user/getAuthorInfo" + location.search;
         getUserInfo(userUrl);
