@@ -1,60 +1,6 @@
-2024-06-04 09:22:53.356  INFO 24528 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 24528 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
-2024-06-04 09:22:53.359  INFO 24528 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-06-04 09:22:53.888  INFO 24528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-06-04 09:22:53.893  INFO 24528 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-04 09:22:53.893  INFO 24528 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2024-06-04 09:22:53.974  INFO 24528 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-04 09:22:53.974  INFO 24528 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 593 ms
-2024-06-04 09:22:54.334  INFO 24528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-06-04 09:22:54.340  INFO 24528 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 1.231 seconds (JVM running for 1.776)
-2024-06-04 09:23:18.987  INFO 24528 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-04 09:23:18.988  INFO 24528 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-06-04 09:23:18.990  INFO 24528 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-06-04 09:24:23.073  INFO 24528 --- [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-04 09:24:23.143  INFO 24528 --- [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-04 09:26:03.893  INFO 24528 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-06-04 09:26:03.897  INFO 24528 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-06-04 09:26:08.188  INFO 5596 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 5596 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
-2024-06-04 09:26:08.189  INFO 5596 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-06-04 09:26:08.574  INFO 5596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-06-04 09:26:08.578  INFO 5596 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-04 09:26:08.578  INFO 5596 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2024-06-04 09:26:08.632  INFO 5596 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-04 09:26:08.632  INFO 5596 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 427 ms
-2024-06-04 09:26:08.913  INFO 5596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-06-04 09:26:08.917  INFO 5596 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 0.893 seconds (JVM running for 1.342)
-2024-06-04 09:26:13.001  INFO 5596 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-04 09:26:13.001  INFO 5596 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-06-04 09:26:13.001  INFO 5596 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-06-04 09:26:13.094  INFO 5596 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-04 09:26:13.142  INFO 5596 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-04 09:31:37.495  INFO 11644 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 11644 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
-2024-06-04 09:31:37.497  INFO 11644 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-06-04 09:31:37.869  INFO 11644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-06-04 09:31:37.872  INFO 11644 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-04 09:31:37.872  INFO 11644 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2024-06-04 09:31:37.923  INFO 11644 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-04 09:31:37.923  INFO 11644 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 411 ms
-2024-06-04 09:31:38.213  INFO 11644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-06-04 09:31:38.217  INFO 11644 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 0.89 seconds (JVM running for 1.366)
-2024-06-04 09:31:45.344  INFO 11644 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-04 09:31:45.345  INFO 11644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-06-04 09:31:45.345  INFO 11644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-06-04 09:31:45.419  INFO 11644 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-04 09:31:45.474  INFO 11644 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-04 09:34:04.444  INFO 11644 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-06-04 09:34:04.448  INFO 11644 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-06-04 09:34:15.863  INFO 12552 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 12552 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
-2024-06-04 09:34:15.864  INFO 12552 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-06-04 09:34:16.272  INFO 12552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-06-04 09:34:16.276  INFO 12552 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-04 09:34:16.276  INFO 12552 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2024-06-04 09:34:16.326  INFO 12552 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-04 09:34:16.326  INFO 12552 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 446 ms
-2024-06-04 09:34:16.613  INFO 12552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-06-04 09:34:16.617  INFO 12552 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 0.922 seconds (JVM running for 1.419)
-2024-06-04 09:34:29.342  INFO 12552 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-04 09:34:29.342  INFO 12552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-06-04 09:34:29.343  INFO 12552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-06-04 09:34:29.467  INFO 12552 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-04 09:34:29.515  INFO 12552 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-07 09:44:16.882  INFO 23840 --- [main] com.example.springblog.JwTUtilsTests     : Starting JwTUtilsTests using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 23840 (started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
+2024-06-07 09:44:16.886  INFO 23840 --- [main] com.example.springblog.JwTUtilsTests     : No active profile set, falling back to 1 default profile: "default"
+2024-06-07 09:44:17.955  INFO 23840 --- [main] com.example.springblog.JwTUtilsTests     : Started JwTUtilsTests in 1.267 seconds (JVM running for 1.833)
+2024-06-07 09:44:29.315  INFO 28564 --- [main] com.example.springblog.JwTUtilsTests     : Starting JwTUtilsTests using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 28564 (started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
+2024-06-07 09:44:29.317  INFO 28564 --- [main] com.example.springblog.JwTUtilsTests     : No active profile set, falling back to 1 default profile: "default"
+2024-06-07 09:44:30.307  INFO 28564 --- [main] com.example.springblog.JwTUtilsTests     : Started JwTUtilsTests in 1.153 seconds (JVM running for 1.64)
