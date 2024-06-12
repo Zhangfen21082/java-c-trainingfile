@@ -52,8 +52,16 @@
         </div>
     </div>
     <script src="js/jquery.min.js"></script>
+<!--    <script>-->
+<!--        $(document).ajaxSend(function (e, xhr, opt) {-->
+<!--            var user_token = localStorage.getItem("user_token");-->
+<!--            xhr.setRequestHeader("user_token", user_token);-->
+<!--        });-->
+<!--    </script>-->
     <script src="js/common.js"></script>
+
     <script>
+
         getBlogList();
         function getBlogList() {
             $.ajax({
@@ -78,7 +86,6 @@
                     }
                 },
                 error: function (error) {
-                    location.href = "blog_login.html";
                     if (error != null && error.status == 401) {
                         location.href = "blog_login.html";
                     }
