@@ -58,9 +58,8 @@ public class JwtUtils {
         }
         return true;
     }
-}
 
-/*
+    // 从Token中获取id
     public static Integer getUserIdFromToken(String token){
         Claims body = parseToken(token);
         if (body!=null){
@@ -68,4 +67,5 @@ public class JwtUtils {
         }
         return null;
     }
-}*/
+}
+

@@ -52,12 +52,12 @@
         </div>
     </div>
     <script src="js/jquery.min.js"></script>
-<!--    <script>-->
-<!--        $(document).ajaxSend(function (e, xhr, opt) {-->
-<!--            var user_token = localStorage.getItem("user_token");-->
-<!--            xhr.setRequestHeader("user_token", user_token);-->
-<!--        });-->
-<!--    </script>-->
+    <script>
+        $(document).ajaxSend(function (e, xhr, opt) {
+            var user_token = localStorage.getItem("user_token");
+            xhr.setRequestHeader("user_token", user_token);
+        });
+    </script>
     <script src="js/common.js"></script>
 
     <script>
@@ -88,6 +88,19 @@
                 error: function (error) {
                     if (error != null && error.status == 401) {
                         location.href = "blog_login.html";
+                    }
+                }
+            });
+        }
+        getUserInfo();
+        function getUserInfo(){
+            $.ajax({
+                type: "get",
+                url: "/user/getUserInfo",
+                success:function(result){
+                    if(result.code==200 && result.data!=null){
+                        $(".left .card h3").text(result.data.userName);
+                        $(".left .card a").attr("href", result.data.githubUrl);
                     }
                 }
             });
