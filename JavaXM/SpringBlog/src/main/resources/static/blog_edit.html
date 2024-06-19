@@ -35,6 +35,12 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="blog-editormd/editormd.min.js"></script>
+    <script>
+        $(document).ajaxSend(function (e, xhr, opt) {
+            var user_token = localStorage.getItem("user_token");
+            xhr.setRequestHeader("user_token", user_token);
+        });
+    </script>
     <script src="js/common.js"></script>
     <script type="text/javascript">
 
@@ -47,7 +53,20 @@
         });
 
         function submit() {
-            alert("发表博客");
+            $.ajax({
+                type:"post",
+                url: "/blog/add",
+                data:{
+                    title:$("#title").val(),
+                    content:$("#content").val()
+                },
+                success:function(result){
+                    if(result.code==200 && result.data==true){
+                        location.href = "blog_list.html";
+                    }
+                    //结果为false, 下面自己补充
+                }
+            });
         }
     </script>
 </body>

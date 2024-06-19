@@ -18,4 +18,8 @@ public class BlogService {
     public BlogInfo queryBlogDetail(Integer blogId) {
         return blogMapper.selectByIdBlog(blogId);
     }
+
+    public Integer publishBlog(BlogInfo blogInfo) {
+        return blogMapper.insertNewBlog(blogInfo);
+    }
 }

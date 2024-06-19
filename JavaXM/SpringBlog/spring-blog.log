@@ -1,675 +1,398 @@
-2024-06-17 09:24:33.442  INFO 13584 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 13584 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
-2024-06-17 09:24:33.442  INFO 13584 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-06-17 09:24:33.985  INFO 13584 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-06-17 09:24:33.989  INFO 13584 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-17 09:24:33.989  INFO 13584 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2024-06-17 09:24:34.106  INFO 13584 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-17 09:24:34.106  INFO 13584 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 649 ms
-2024-06-17 09:24:34.568  INFO 13584 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-06-17 09:24:34.576  INFO 13584 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 1.38 seconds (JVM running for 2.096)
-2024-06-17 09:25:21.007  INFO 13584 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-17 09:25:21.008  INFO 13584 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-06-17 09:25:21.010  INFO 13584 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-06-17 09:25:21.496  INFO 13584 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 09:25:21.528 ERROR 13584 --- [http-nio-8080-exec-7] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 09:25:21.544  INFO 13584 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 09:25:25.456  INFO 13584 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-17 09:25:27.284  INFO 13584 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-17 09:25:32.274  INFO 13584 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MTEzMn0.uchhR9G6iDnEnuXQ5enA0aJy7eqxwS2xr5fagZRxMBI
-2024-06-17 09:25:32.309  INFO 13584 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 09:25:32.326  INFO 13584 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 09:25:32.330 ERROR 13584 --- [http-nio-8080-exec-6] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 09:25:32.330  INFO 13584 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 09:25:49.254  INFO 13584 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-06-17 09:25:49.257  INFO 13584 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-06-17 09:59:57.533  INFO 15016 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 15016 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
-2024-06-17 09:59:57.534  INFO 15016 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-06-17 09:59:57.933  INFO 15016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-06-17 09:59:57.938  INFO 15016 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-17 09:59:57.938  INFO 15016 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2024-06-17 09:59:57.987  INFO 15016 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-17 09:59:57.987  INFO 15016 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 437 ms
-2024-06-17 09:59:58.280  INFO 15016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-06-17 09:59:58.284  INFO 15016 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 0.935 seconds (JVM running for 1.607)
-2024-06-17 10:00:07.259  INFO 15016 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-17 10:00:07.263  INFO 15016 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-06-17 10:00:07.266  INFO 15016 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-06-17 10:00:07.779  INFO 15016 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MTEzMn0.uchhR9G6iDnEnuXQ5enA0aJy7eqxwS2xr5fagZRxMBI
-2024-06-17 10:00:08.919  INFO 15016 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:00:08.919 ERROR 15016 --- [http-nio-8080-exec-8] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:00:08.919  INFO 15016 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:00:09.662  INFO 15016 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:00:09.709  INFO 15016 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-17 10:00:10.037  INFO 15016 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-17 10:01:08.848  INFO 15016 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MTEzMn0.uchhR9G6iDnEnuXQ5enA0aJy7eqxwS2xr5fagZRxMBI
-2024-06-17 10:01:08.853  INFO 15016 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:01:08.875  INFO 15016 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:01:08.881 ERROR 15016 --- [http-nio-8080-exec-6] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:01:08.881  INFO 15016 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:01:14.133  INFO 15016 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:01:14.136  INFO 15016 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:01:14.136 ERROR 15016 --- [http-nio-8080-exec-6] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:01:14.136  INFO 15016 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:01:14.136 ERROR 15016 --- [http-nio-8080-exec-7] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:01:14.136  INFO 15016 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:01:14.172  INFO 15016 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:01:14.172 ERROR 15016 --- [http-nio-8080-exec-4] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:01:14.172  INFO 15016 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:01:22.397  INFO 15016 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MzI4Mn0.1NzEAFOMRE3nuzybJ2VqVeixAjL_TPL6BFbNAEzOedY
-2024-06-17 10:01:22.401  INFO 15016 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:01:22.438  INFO 15016 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:01:22.442 ERROR 15016 --- [http-nio-8080-exec-3] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:01:22.443  INFO 15016 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:01:55.561  INFO 15016 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MzI4Mn0.1NzEAFOMRE3nuzybJ2VqVeixAjL_TPL6BFbNAEzOedY
-2024-06-17 10:01:55.568  INFO 15016 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:02:57.841  INFO 15016 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MzI4Mn0.1NzEAFOMRE3nuzybJ2VqVeixAjL_TPL6BFbNAEzOedY
-2024-06-17 10:02:57.844  INFO 15016 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:05:00.412  INFO 1964 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 1964 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
-2024-06-17 10:05:00.414  INFO 1964 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-06-17 10:05:00.797  INFO 1964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-06-17 10:05:00.801  INFO 1964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-17 10:05:00.801  INFO 1964 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2024-06-17 10:05:00.849  INFO 1964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-17 10:05:00.849  INFO 1964 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 420 ms
-2024-06-17 10:05:01.138  INFO 1964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-06-17 10:05:01.142  INFO 1964 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 0.898 seconds (JVM running for 1.384)
-2024-06-17 10:05:16.375  INFO 1964 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-17 10:05:16.375  INFO 1964 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-06-17 10:05:16.375  INFO 1964 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-06-17 10:05:16.375  INFO 1964 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MzI4Mn0.1NzEAFOMRE3nuzybJ2VqVeixAjL_TPL6BFbNAEzOedY
-2024-06-17 10:05:16.386  INFO 1964 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:05:16.391 ERROR 1964 --- [http-nio-8080-exec-3] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:05:16.391  INFO 1964 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:05:16.644  INFO 1964 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:05:16.660  INFO 1964 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-17 10:05:16.708  INFO 1964 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-17 10:05:33.168  INFO 1964 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:05:33.170 ERROR 1964 --- [http-nio-8080-exec-6] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:05:33.170  INFO 1964 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:05:33.171  INFO 1964 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:05:33.171 ERROR 1964 --- [http-nio-8080-exec-7] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:05:33.171  INFO 1964 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:05:33.192  INFO 1964 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:05:33.192 ERROR 1964 --- [http-nio-8080-exec-9] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:05:33.192  INFO 1964 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:05:39.860  INFO 1964 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MzUzOX0.hJcTkLqzVlZH2iGYpudsMEfZpTGgjALl12GickS4Pis
-2024-06-17 10:05:39.860  INFO 1964 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:05:39.893  INFO 1964 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:05:39.893 ERROR 1964 --- [http-nio-8080-exec-1] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:05:39.893  INFO 1964 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:05:59.264  INFO 1964 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MzI4Mn0.1NzEAFOMRE3nuzybJ2VqVeixAjL_TPL6BFbNAEzOedY
-2024-06-17 10:05:59.265  INFO 1964 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:06:05.261  INFO 1964 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MzI4Mn0.1NzEAFOMRE3nuzybJ2VqVeixAjL_TPL6BFbNAEzOedY
-2024-06-17 10:06:05.262  INFO 1964 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:06:10.729  INFO 1964 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MzI4Mn0.1NzEAFOMRE3nuzybJ2VqVeixAjL_TPL6BFbNAEzOedY
-2024-06-17 10:06:10.731  INFO 1964 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:06:21.200  INFO 1964 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MzI4Mn0.1NzEAFOMRE3nuzybJ2VqVeixAjL_TPL6BFbNAEzOedY
-2024-06-17 10:06:21.200  INFO 1964 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:06:32.459  INFO 1964 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MzI4Mn0.1NzEAFOMRE3nuzybJ2VqVeixAjL_TPL6BFbNAEzOedY
-2024-06-17 10:06:32.460  INFO 1964 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:11:35.098  INFO 4024 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 4024 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
-2024-06-17 10:11:35.098  INFO 4024 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-06-17 10:11:35.481  INFO 4024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-06-17 10:11:35.481  INFO 4024 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-17 10:11:35.481  INFO 4024 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2024-06-17 10:11:35.539  INFO 4024 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-17 10:11:35.539  INFO 4024 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 420 ms
-2024-06-17 10:11:35.813  INFO 4024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-06-17 10:11:35.813  INFO 4024 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 0.884 seconds (JVM running for 1.358)
-2024-06-17 10:11:35.904  INFO 4024 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-17 10:11:35.904  INFO 4024 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-06-17 10:11:35.904  INFO 4024 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-06-17 10:11:36.047  INFO 4024 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MzUzOX0.hJcTkLqzVlZH2iGYpudsMEfZpTGgjALl12GickS4Pis
-2024-06-17 10:11:36.152  INFO 4024 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:11:36.153 ERROR 4024 --- [http-nio-8080-exec-8] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:11:36.154  INFO 4024 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:11:36.337  INFO 4024 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:11:36.349  INFO 4024 --- [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-17 10:11:36.395  INFO 4024 --- [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-17 10:11:45.077  INFO 4024 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MzUzOX0.hJcTkLqzVlZH2iGYpudsMEfZpTGgjALl12GickS4Pis
-2024-06-17 10:11:45.077  INFO 4024 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:11:45.080 ERROR 4024 --- [http-nio-8080-exec-5] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:11:45.080  INFO 4024 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:11:45.080  INFO 4024 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:11:46.683  INFO 4024 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MzUzOX0.hJcTkLqzVlZH2iGYpudsMEfZpTGgjALl12GickS4Pis
-2024-06-17 10:11:46.686  INFO 4024 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:11:46.689  INFO 4024 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:11:46.691 ERROR 4024 --- [http-nio-8080-exec-3] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:11:46.691  INFO 4024 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:11:54.369  INFO 4024 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MTEzMn0.uchhR9G6iDnEnuXQ5enA0aJy7eqxwS2xr5fagZRxMBI
-2024-06-17 10:11:54.372  INFO 4024 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:11:54.521  INFO 4024 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:11:54.525 ERROR 4024 --- [http-nio-8080-exec-1] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:11:54.525  INFO 4024 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:12:08.349  INFO 4024 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-06-17 10:12:08.351  INFO 4024 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-06-17 10:13:58.559  INFO 1592 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 1592 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
-2024-06-17 10:13:58.560  INFO 1592 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-06-17 10:13:58.946  INFO 1592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-06-17 10:13:58.949  INFO 1592 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-17 10:13:58.949  INFO 1592 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2024-06-17 10:13:58.998  INFO 1592 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-17 10:13:58.999  INFO 1592 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 423 ms
-2024-06-17 10:13:59.268  INFO 1592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-06-17 10:13:59.273  INFO 1592 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 0.875 seconds (JVM running for 1.412)
-2024-06-17 10:14:01.910  INFO 1592 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-17 10:14:01.910  INFO 1592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-06-17 10:14:01.910  INFO 1592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-06-17 10:14:01.935  INFO 1592 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MzUzOX0.hJcTkLqzVlZH2iGYpudsMEfZpTGgjALl12GickS4Pis
-2024-06-17 10:14:01.940  INFO 1592 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:14:01.944 ERROR 1592 --- [http-nio-8080-exec-7] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:14:01.944  INFO 1592 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:14:02.170  INFO 1592 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MzUzOX0.hJcTkLqzVlZH2iGYpudsMEfZpTGgjALl12GickS4Pis
-2024-06-17 10:14:02.177  INFO 1592 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:14:02.177 ERROR 1592 --- [http-nio-8080-exec-6] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:14:02.177  INFO 1592 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:14:02.213  INFO 1592 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:14:02.213  INFO 1592 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:14:02.225  INFO 1592 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-17 10:14:02.273  INFO 1592 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-17 10:14:12.459  INFO 1592 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MzUzOX0.hJcTkLqzVlZH2iGYpudsMEfZpTGgjALl12GickS4Pis
-2024-06-17 10:14:12.462  INFO 1592 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:14:12.464  INFO 1592 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:14:12.464 ERROR 1592 --- [http-nio-8080-exec-9] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:14:12.465  INFO 1592 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:14:21.700  INFO 1592 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MzUzOX0.hJcTkLqzVlZH2iGYpudsMEfZpTGgjALl12GickS4Pis
-2024-06-17 10:14:21.702  INFO 1592 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:14:21.703  INFO 1592 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:14:21.705 ERROR 1592 --- [http-nio-8080-exec-1] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:14:21.705  INFO 1592 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:14:31.215  INFO 1592 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MzUzOX0.hJcTkLqzVlZH2iGYpudsMEfZpTGgjALl12GickS4Pis
-2024-06-17 10:14:31.215  INFO 1592 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:14:31.219 ERROR 1592 --- [http-nio-8080-exec-4] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:14:31.219  INFO 1592 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:14:31.219  INFO 1592 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:14:33.112  INFO 1592 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:14:33.115 ERROR 1592 --- [http-nio-8080-exec-2] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:14:33.115  INFO 1592 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:14:39.887  INFO 1592 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MTEzMn0.uchhR9G6iDnEnuXQ5enA0aJy7eqxwS2xr5fagZRxMBI
-2024-06-17 10:14:39.890  INFO 1592 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:14:40.049  INFO 1592 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:14:40.051 ERROR 1592 --- [http-nio-8080-exec-1] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:14:40.051  INFO 1592 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:14:56.298  INFO 1592 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MzUzOX0.hJcTkLqzVlZH2iGYpudsMEfZpTGgjALl12GickS4Pis
-2024-06-17 10:14:56.299  INFO 1592 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:14:56.299  INFO 1592 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:14:56.300 ERROR 1592 --- [http-nio-8080-exec-5] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:14:56.300  INFO 1592 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:15:06.176  INFO 1592 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:15:06.183 ERROR 1592 --- [http-nio-8080-exec-6] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:15:06.183  INFO 1592 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:15:06.214  INFO 1592 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:15:06.217 ERROR 1592 --- [http-nio-8080-exec-2] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:15:06.217  INFO 1592 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:15:06.231  INFO 1592 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:15:06.233 ERROR 1592 --- [http-nio-8080-exec-9] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:15:06.233  INFO 1592 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:15:08.987  INFO 1592 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:15:08.988 ERROR 1592 --- [http-nio-8080-exec-3] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:15:08.988  INFO 1592 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:15:08.988  INFO 1592 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:15:08.992 ERROR 1592 --- [http-nio-8080-exec-8] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:15:08.992  INFO 1592 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:15:09.013  INFO 1592 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:15:09.014 ERROR 1592 --- [http-nio-8080-exec-1] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:15:09.014  INFO 1592 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:15:12.289  INFO 1592 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MTEzMn0.uchhR9G6iDnEnuXQ5enA0aJy7eqxwS2xr5fagZRxMBI
-2024-06-17 10:15:12.289  INFO 1592 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:15:12.304  INFO 1592 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:15:12.305 ERROR 1592 --- [http-nio-8080-exec-7] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:15:12.305  INFO 1592 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:15:16.497  INFO 1592 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:15:16.499 ERROR 1592 --- [http-nio-8080-exec-4] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:15:16.499  INFO 1592 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:15:16.500  INFO 1592 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:15:16.502 ERROR 1592 --- [http-nio-8080-exec-6] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:15:16.502  INFO 1592 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:15:16.517  INFO 1592 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:15:16.519 ERROR 1592 --- [http-nio-8080-exec-2] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:15:16.519  INFO 1592 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:15:19.915  INFO 1592 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:15:19.919 ERROR 1592 --- [http-nio-8080-exec-9] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:15:19.920  INFO 1592 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:15:19.920  INFO 1592 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:15:19.921 ERROR 1592 --- [http-nio-8080-exec-3] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:15:19.921  INFO 1592 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:15:19.940  INFO 1592 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:15:19.941 ERROR 1592 --- [http-nio-8080-exec-8] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:15:19.941  INFO 1592 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:22:38.944  INFO 4980 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 4980 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
-2024-06-17 10:22:38.946  INFO 4980 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-06-17 10:22:39.416  INFO 4980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-06-17 10:22:39.421  INFO 4980 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-17 10:22:39.421  INFO 4980 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2024-06-17 10:22:39.474  INFO 4980 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-17 10:22:39.475  INFO 4980 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 501 ms
-2024-06-17 10:22:39.737  INFO 4980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-06-17 10:22:39.741  INFO 4980 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 1.017 seconds (JVM running for 1.543)
-2024-06-17 10:22:41.889  INFO 4980 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-17 10:22:41.889  INFO 4980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-06-17 10:22:41.890  INFO 4980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-06-17 10:22:41.950  INFO 4980 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:22:41.952  INFO 4980 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:22:41.959 ERROR 4980 --- [http-nio-8080-exec-2] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:22:41.959 ERROR 4980 --- [http-nio-8080-exec-4] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:22:41.959  INFO 4980 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:22:41.959  INFO 4980 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:22:41.975  INFO 4980 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:22:41.976 ERROR 4980 --- [http-nio-8080-exec-3] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:22:41.976  INFO 4980 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:22:48.924  INFO 4980 --- [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-17 10:22:48.956  INFO 4980 --- [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-17 10:22:49.281  INFO 4980 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:49.293  INFO 4980 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:22:49.293  INFO 4980 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:49.293 ERROR 4980 --- [http-nio-8080-exec-9] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:22:49.293  INFO 4980 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:22:53.719  INFO 4980 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:53.719  INFO 4980 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:53.719  INFO 4980 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:53.719  INFO 4980 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:53.738  INFO 4980 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:22:53.738 ERROR 4980 --- [http-nio-8080-exec-4] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:22:53.738  INFO 4980 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:22:54.856  INFO 4980 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:54.856  INFO 4980 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:54.857  INFO 4980 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:54.857  INFO 4980 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:54.861  INFO 4980 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:22:54.862 ERROR 4980 --- [http-nio-8080-exec-7] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:22:54.863  INFO 4980 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:22:55.252  INFO 4980 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:55.252  INFO 4980 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:55.253  INFO 4980 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:55.253  INFO 4980 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:55.271  INFO 4980 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:22:55.271 ERROR 4980 --- [http-nio-8080-exec-2] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:22:55.271  INFO 4980 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:22:55.442  INFO 4980 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:55.442  INFO 4980 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:55.443  INFO 4980 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:55.443  INFO 4980 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:55.451  INFO 4980 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:22:55.451 ERROR 4980 --- [http-nio-8080-exec-6] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:22:55.451  INFO 4980 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:22:55.639  INFO 4980 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:55.639  INFO 4980 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:55.640  INFO 4980 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:55.640  INFO 4980 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:55.661  INFO 4980 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:22:55.661 ERROR 4980 --- [http-nio-8080-exec-10] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:22:55.661  INFO 4980 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:22:56.236  INFO 4980 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:56.236  INFO 4980 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:56.237  INFO 4980 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:56.237  INFO 4980 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:56.243  INFO 4980 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:22:56.247 ERROR 4980 --- [http-nio-8080-exec-3] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:22:56.247  INFO 4980 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:22:56.556  INFO 4980 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:56.556  INFO 4980 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:56.556  INFO 4980 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:56.556  INFO 4980 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:56.556  INFO 4980 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:22:56.556 ERROR 4980 --- [http-nio-8080-exec-9] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:22:56.556  INFO 4980 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:22:56.709  INFO 4980 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:56.710  INFO 4980 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:56.710  INFO 4980 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:56.710  INFO 4980 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:56.712  INFO 4980 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:22:56.712 ERROR 4980 --- [http-nio-8080-exec-1] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:22:56.712  INFO 4980 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:22:56.908  INFO 4980 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:56.908  INFO 4980 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:56.908  INFO 4980 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:56.908  INFO 4980 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:56.908  INFO 4980 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:22:56.908 ERROR 4980 --- [http-nio-8080-exec-6] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:22:56.908  INFO 4980 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:22:57.086  INFO 4980 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:57.086  INFO 4980 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:57.087  INFO 4980 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:57.087  INFO 4980 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:57.090  INFO 4980 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:22:57.090 ERROR 4980 --- [http-nio-8080-exec-8] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:22:57.090  INFO 4980 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:22:57.291  INFO 4980 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:57.291  INFO 4980 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:57.291  INFO 4980 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:57.291  INFO 4980 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:57.291  INFO 4980 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:22:57.291 ERROR 4980 --- [http-nio-8080-exec-6] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:22:57.291  INFO 4980 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:22:57.850  INFO 4980 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:57.850  INFO 4980 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:57.851  INFO 4980 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:57.851  INFO 4980 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:57.853  INFO 4980 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:22:57.854 ERROR 4980 --- [http-nio-8080-exec-7] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:22:57.854  INFO 4980 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:22:58.325  INFO 4980 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:58.325  INFO 4980 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:58.325  INFO 4980 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:58.325  INFO 4980 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:58.342  INFO 4980 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:22:58.343 ERROR 4980 --- [http-nio-8080-exec-10] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:22:58.343  INFO 4980 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:22:58.646  INFO 4980 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:58.646  INFO 4980 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:58.647  INFO 4980 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:58.647  INFO 4980 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:58.654  INFO 4980 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:22:58.654 ERROR 4980 --- [http-nio-8080-exec-5] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:22:58.654  INFO 4980 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:22:59.512  INFO 4980 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:59.512  INFO 4980 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:22:59.513  INFO 4980 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:59.513  INFO 4980 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:22:59.530  INFO 4980 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:22:59.531 ERROR 4980 --- [http-nio-8080-exec-1] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:22:59.532  INFO 4980 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:23:07.916  INFO 4980 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:23:07.917 ERROR 4980 --- [http-nio-8080-exec-8] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:23:07.917  INFO 4980 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:23:08.947  INFO 4980 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:23:08.947 ERROR 4980 --- [http-nio-8080-exec-10] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:23:08.947  INFO 4980 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:23:58.900  INFO 4980 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:23:58.901  INFO 4980 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:23:59.045  INFO 4980 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:23:59.046 ERROR 4980 --- [http-nio-8080-exec-6] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:23:59.046  INFO 4980 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:26:40.207  INFO 9744 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 9744 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
-2024-06-17 10:26:40.221  INFO 9744 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-06-17 10:26:40.581  INFO 9744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-06-17 10:26:40.581  INFO 9744 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-17 10:26:40.581  INFO 9744 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2024-06-17 10:26:40.628  INFO 9744 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-17 10:26:40.628  INFO 9744 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 391 ms
-2024-06-17 10:26:40.941  INFO 9744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-06-17 10:26:40.956  INFO 9744 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 0.897 seconds (JVM running for 1.363)
-2024-06-17 10:26:47.384  INFO 9744 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-17 10:26:47.384  INFO 9744 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-06-17 10:26:47.384  INFO 9744 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-06-17 10:26:47.442  INFO 9744 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:26:47.442  INFO 9744 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:26:47.442  INFO 9744 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:26:47.459 ERROR 9744 --- [http-nio-8080-exec-3] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:26:47.459  INFO 9744 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:26:48.611  INFO 9744 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:26:48.611  INFO 9744 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:26:48.611  INFO 9744 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:26:48.627 ERROR 9744 --- [http-nio-8080-exec-9] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:26:48.627  INFO 9744 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:26:49.092  INFO 9744 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:26:49.092  INFO 9744 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:26:49.092  INFO 9744 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:26:49.097  INFO 9744 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:26:49.214  INFO 9744 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-17 10:26:49.514  INFO 9744 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-17 10:42:53.740  WARN 9744 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m4s57ms90µs300ns).
-2024-06-17 10:43:30.946  INFO 9744 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-06-17 10:43:30.970  INFO 9744 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-06-17 10:44:23.747  INFO 14200 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 14200 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
-2024-06-17 10:44:23.748  INFO 14200 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-06-17 10:44:24.129  INFO 14200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-06-17 10:44:24.134  INFO 14200 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-17 10:44:24.136  INFO 14200 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2024-06-17 10:44:24.185  INFO 14200 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-17 10:44:24.185  INFO 14200 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 420 ms
-2024-06-17 10:44:24.551  INFO 14200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-06-17 10:44:24.551  INFO 14200 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 0.982 seconds (JVM running for 1.489)
-2024-06-17 10:44:27.579  INFO 14200 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-17 10:44:27.579  INFO 14200 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-06-17 10:44:27.579  INFO 14200 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-06-17 10:44:27.612  INFO 14200 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:27.612  INFO 14200 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:27.612  INFO 14200 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:44:27.612 ERROR 14200 --- [http-nio-8080-exec-4] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:44:27.612  INFO 14200 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:44:27.897  INFO 14200 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:27.897  INFO 14200 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:27.913  INFO 14200 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-17 10:44:27.960  INFO 14200 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-17 10:44:28.338  INFO 14200 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:28.338  INFO 14200 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:28.339  INFO 14200 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:28.339  INFO 14200 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:28.339  INFO 14200 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:44:28.340 ERROR 14200 --- [http-nio-8080-exec-8] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:44:28.340  INFO 14200 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:44:29.000  INFO 14200 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:29.000  INFO 14200 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:29.001  INFO 14200 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:29.001  INFO 14200 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:29.006  INFO 14200 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:44:29.006 ERROR 14200 --- [http-nio-8080-exec-4] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:44:29.006  INFO 14200 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:44:29.392  INFO 14200 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:29.392  INFO 14200 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:29.393  INFO 14200 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:29.393  INFO 14200 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:29.397  INFO 14200 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:44:29.397 ERROR 14200 --- [http-nio-8080-exec-8] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:44:29.397  INFO 14200 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:44:29.770  INFO 14200 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:29.770  INFO 14200 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:29.770  INFO 14200 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:29.770  INFO 14200 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:29.775  INFO 14200 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:44:29.775 ERROR 14200 --- [http-nio-8080-exec-1] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:44:29.775  INFO 14200 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:44:31.229  INFO 14200 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:31.230  INFO 14200 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:31.230  INFO 14200 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:31.232  INFO 14200 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:31.344  INFO 14200 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:44:31.344 ERROR 14200 --- [http-nio-8080-exec-6] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:44:31.344  INFO 14200 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:44:36.471  INFO 14200 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:36.472  INFO 14200 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:36.472  INFO 14200 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:36.473  INFO 14200 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:36.585  INFO 14200 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:44:36.585 ERROR 14200 --- [http-nio-8080-exec-9] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:44:36.585  INFO 14200 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:44:38.853  INFO 14200 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:38.853  INFO 14200 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:38.854  INFO 14200 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:38.854  INFO 14200 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:38.871  INFO 14200 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:44:38.871 ERROR 14200 --- [http-nio-8080-exec-3] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:44:38.871  INFO 14200 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:44:42.250  INFO 14200 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:42.250  INFO 14200 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:42.250  INFO 14200 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:42.250  INFO 14200 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:42.250  INFO 14200 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:44:42.250 ERROR 14200 --- [http-nio-8080-exec-8] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:44:42.250  INFO 14200 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:44:44.784  INFO 14200 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:44.784  INFO 14200 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:44.785  INFO 14200 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:44.785  INFO 14200 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:44.799  INFO 14200 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:44:44.800 ERROR 14200 --- [http-nio-8080-exec-1] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:44:44.800  INFO 14200 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:44:45.179  INFO 14200 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:45.179  INFO 14200 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:45.179  INFO 14200 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:45.179  INFO 14200 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:45.179  INFO 14200 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:44:45.179 ERROR 14200 --- [http-nio-8080-exec-8] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:44:45.179  INFO 14200 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:44:45.339  INFO 14200 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:45.340  INFO 14200 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:45.340  INFO 14200 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:45.340  INFO 14200 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:45.342  INFO 14200 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:44:45.342 ERROR 14200 --- [http-nio-8080-exec-9] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:44:45.342  INFO 14200 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:44:45.499  INFO 14200 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:45.499  INFO 14200 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:44:45.501  INFO 14200 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:45.501  INFO 14200 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:44:45.510  INFO 14200 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:44:45.510 ERROR 14200 --- [http-nio-8080-exec-3] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:44:45.510  INFO 14200 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:45:02.710  INFO 26156 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 26156 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
-2024-06-17 10:45:02.711  INFO 26156 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-06-17 10:45:03.104  INFO 26156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-06-17 10:45:03.107  INFO 26156 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-17 10:45:03.107  INFO 26156 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2024-06-17 10:45:03.155  INFO 26156 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-17 10:45:03.155  INFO 26156 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 428 ms
-2024-06-17 10:45:03.430  INFO 26156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-06-17 10:45:03.434  INFO 26156 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 0.891 seconds (JVM running for 1.355)
-2024-06-17 10:45:29.150  INFO 26156 --- [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-17 10:45:29.150  INFO 26156 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-06-17 10:45:29.156  INFO 26156 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2024-06-17 10:45:29.191  INFO 26156 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:45:29.196  INFO 26156 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:45:29.201  INFO 26156 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:45:29.245 ERROR 26156 --- [http-nio-8080-exec-2] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:45:29.245  INFO 26156 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:45:30.972  INFO 26156 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:45:30.973  INFO 26156 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:45:30.975  INFO 26156 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:45:30.979 ERROR 26156 --- [http-nio-8080-exec-7] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:45:30.979  INFO 26156 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:45:31.179  INFO 26156 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:45:31.184  INFO 26156 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:45:31.184  INFO 26156 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:45:31.185  INFO 26156 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:45:31.234  INFO 26156 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-17 10:45:31.393  INFO 26156 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:45:31.394  INFO 26156 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NDU2OH0.qL01fGRuWvPZuqc7aY7IufQT7WEU6guIVHRyI0OxGYM
-2024-06-17 10:45:31.396  INFO 26156 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:45:31.396  INFO 26156 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:45:31.396  INFO 26156 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:45:31.399 ERROR 26156 --- [http-nio-8080-exec-2] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:45:31.399  INFO 26156 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:45:31.528  INFO 26156 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-17 10:45:41.712  INFO 26156 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:45:41.712  INFO 26156 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:45:41.718 ERROR 26156 --- [http-nio-8080-exec-7] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:45:41.718 ERROR 26156 --- [http-nio-8080-exec-8] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:45:41.719  INFO 26156 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:45:41.719  INFO 26156 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:45:41.739  INFO 26156 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:45:41.741 ERROR 26156 --- [http-nio-8080-exec-2] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:45:41.741  INFO 26156 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:45:41.761  INFO 26156 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:45:41.763 ERROR 26156 --- [http-nio-8080-exec-6] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:45:41.763  INFO 26156 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:45:47.049  INFO 26156 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NTk0Nn0.SKEAwJahq0yjQ9flcCSyWZdWn1Aruww077rMdmOEfE8
-2024-06-17 10:45:47.050  INFO 26156 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NTk0Nn0.SKEAwJahq0yjQ9flcCSyWZdWn1Aruww077rMdmOEfE8
-2024-06-17 10:45:47.051  INFO 26156 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:45:47.051  INFO 26156 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:45:47.056  INFO 26156 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:45:47.061 ERROR 26156 --- [http-nio-8080-exec-5] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:45:47.061  INFO 26156 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:46:16.697  INFO 26156 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NTk0Nn0.SKEAwJahq0yjQ9flcCSyWZdWn1Aruww077rMdmOEfE8
-2024-06-17 10:46:16.698  INFO 26156 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NTk0Nn0.SKEAwJahq0yjQ9flcCSyWZdWn1Aruww077rMdmOEfE8
-2024-06-17 10:46:16.698  INFO 26156 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:46:16.699  INFO 26156 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:46:16.842  INFO 26156 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:46:16.843 ERROR 26156 --- [http-nio-8080-exec-7] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:46:16.843  INFO 26156 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:48:20.148  INFO 9100 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 9100 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
-2024-06-17 10:48:20.149  INFO 9100 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-06-17 10:48:20.533  INFO 9100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-06-17 10:48:20.536  INFO 9100 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-17 10:48:20.536  INFO 9100 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2024-06-17 10:48:20.585  INFO 9100 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-17 10:48:20.586  INFO 9100 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 421 ms
-2024-06-17 10:48:20.882  INFO 9100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-06-17 10:48:20.886  INFO 9100 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 0.924 seconds (JVM running for 1.41)
-2024-06-17 10:48:34.702  INFO 9100 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-17 10:48:34.706  INFO 9100 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-06-17 10:48:34.707  INFO 9100 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-06-17 10:48:34.782  INFO 9100 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:48:34.785  INFO 9100 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:48:34.795  INFO 9100 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:48:34.873 ERROR 9100 --- [http-nio-8080-exec-2] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:48:34.873 ERROR 9100 --- [http-nio-8080-exec-4] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:48:34.873 ERROR 9100 --- [http-nio-8080-exec-3] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:48:34.873  INFO 9100 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:48:34.873  INFO 9100 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:48:34.873  INFO 9100 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:48:34.892  INFO 9100 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:48:34.894 ERROR 9100 --- [http-nio-8080-exec-5] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:48:34.894  INFO 9100 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:48:40.159  INFO 9100 --- [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-17 10:48:40.467  INFO 9100 --- [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-17 10:48:42.614  INFO 9100 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NjEyMH0.sRHJAHHexkam-xoBuvcyxTD09Pbm5nsp-H8zn9SarbA
-2024-06-17 10:48:42.614  INFO 9100 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NjEyMH0.sRHJAHHexkam-xoBuvcyxTD09Pbm5nsp-H8zn9SarbA
-2024-06-17 10:48:42.623  INFO 9100 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:48:42.625 ERROR 9100 --- [http-nio-8080-exec-10] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:48:42.625  INFO 9100 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:48:42.672  INFO 9100 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:48:42.672  INFO 9100 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:49:03.342  INFO 9100 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NjEyMH0.sRHJAHHexkam-xoBuvcyxTD09Pbm5nsp-H8zn9SarbA
-2024-06-17 10:49:03.342  INFO 9100 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NjEyMH0.sRHJAHHexkam-xoBuvcyxTD09Pbm5nsp-H8zn9SarbA
-2024-06-17 10:49:03.344  INFO 9100 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:49:03.344  INFO 9100 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:49:03.344  INFO 9100 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:49:03.345 ERROR 9100 --- [http-nio-8080-exec-2] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:49:03.345  INFO 9100 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:49:11.988  INFO 9100 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5MTEzMn0.uchhR9G6iDnEnuXQ5enA0aJy7eqxwS2xr5fagZRxMBI
-2024-06-17 10:49:11.990 ERROR 9100 --- [http-nio-8080-exec-5] com.example.springblog.utils.JwtUtils    : token过期, 校验失败, token:
-2024-06-17 10:49:11.990  INFO 9100 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:49:12.310  INFO 9100 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:49:12.311 ERROR 9100 --- [http-nio-8080-exec-10] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:49:12.311  INFO 9100 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:49:24.018  INFO 9100 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NjEyMH0.sRHJAHHexkam-xoBuvcyxTD09Pbm5nsp-H8zn9SarbA
-2024-06-17 10:49:24.018  INFO 9100 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:49:24.018  INFO 9100 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NjEyMH0.sRHJAHHexkam-xoBuvcyxTD09Pbm5nsp-H8zn9SarbA
-2024-06-17 10:49:24.018  INFO 9100 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:49:24.133  INFO 9100 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:49:24.133 ERROR 9100 --- [http-nio-8080-exec-2] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:49:24.133  INFO 9100 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:50:10.081  INFO 15128 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 15128 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
-2024-06-17 10:50:10.082  INFO 15128 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-06-17 10:50:10.455  INFO 15128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-06-17 10:50:10.458  INFO 15128 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-17 10:50:10.458  INFO 15128 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2024-06-17 10:50:10.511  INFO 15128 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-17 10:50:10.512  INFO 15128 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 415 ms
-2024-06-17 10:50:10.812  INFO 15128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-06-17 10:50:10.816  INFO 15128 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 0.895 seconds (JVM running for 1.386)
-2024-06-17 10:50:17.767  INFO 15128 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-17 10:50:17.767  INFO 15128 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-06-17 10:50:17.767  INFO 15128 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-06-17 10:50:17.863  INFO 15128 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:50:17.863  INFO 15128 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:50:17.874  INFO 15128 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:50:17.917 ERROR 15128 --- [http-nio-8080-exec-2] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:50:17.922  INFO 15128 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:50:17.935 ERROR 15128 --- [http-nio-8080-exec-4] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:50:17.935 ERROR 15128 --- [http-nio-8080-exec-3] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:50:17.936  INFO 15128 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:50:17.936  INFO 15128 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:50:17.957  INFO 15128 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:50:17.958 ERROR 15128 --- [http-nio-8080-exec-5] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:50:17.958  INFO 15128 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:50:22.799  INFO 15128 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-17 10:50:23.067  INFO 15128 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-17 10:50:25.160  INFO 15128 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NjIyM30.LyCsfUGZN7OvCXkFwjloa2fYAzmzGOVH4vA3lAUBEPE
-2024-06-17 10:50:25.160  INFO 15128 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NjIyM30.LyCsfUGZN7OvCXkFwjloa2fYAzmzGOVH4vA3lAUBEPE
-2024-06-17 10:50:25.161  INFO 15128 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:50:25.162 ERROR 15128 --- [http-nio-8080-exec-8] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:50:25.163  INFO 15128 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:50:25.203  INFO 15128 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:50:25.206  INFO 15128 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:50:28.549  INFO 15128 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NjIyM30.LyCsfUGZN7OvCXkFwjloa2fYAzmzGOVH4vA3lAUBEPE
-2024-06-17 10:50:28.549  INFO 15128 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODU5NjIyM30.LyCsfUGZN7OvCXkFwjloa2fYAzmzGOVH4vA3lAUBEPE
-2024-06-17 10:50:28.551  INFO 15128 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:50:28.551  INFO 15128 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
-2024-06-17 10:50:28.557  INFO 15128 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:50:28.561 ERROR 15128 --- [http-nio-8080-exec-4] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:50:28.561  INFO 15128 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
-2024-06-17 10:50:30.242  INFO 15128 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
-2024-06-17 10:50:30.246 ERROR 15128 --- [http-nio-8080-exec-1] com.example.springblog.utils.JwtUtils    : token校验失败, token:
-2024-06-17 10:50:30.247  INFO 15128 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:13:16.796  INFO 26140 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 26140 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
+2024-06-19 08:13:16.799  INFO 26140 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-06-19 08:13:17.272  INFO 26140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-06-19 08:13:17.277  INFO 26140 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-19 08:13:17.277  INFO 26140 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-06-19 08:13:17.352  INFO 26140 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-19 08:13:17.352  INFO 26140 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 535 ms
+2024-06-19 08:13:17.704  INFO 26140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-19 08:13:17.709  INFO 26140 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 1.136 seconds (JVM running for 1.711)
+2024-06-19 08:14:31.257  INFO 26140 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-19 08:14:31.257  INFO 26140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-19 08:14:31.257  INFO 26140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-06-19 08:14:31.327  INFO 26140 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:14:31.335 ERROR 26140 --- [http-nio-8080-exec-4] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:14:31.335  INFO 26140 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:14:35.328  INFO 26140 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-19 08:14:35.751  INFO 26140 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-19 08:14:42.929  INFO 26140 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc1OTY4Mn0.knpUHnUHYLyLTD0NjMh4bCIIZ9qZPYQP1U8vDi4oMv4
+2024-06-19 08:14:42.930  INFO 26140 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc1OTY4Mn0.knpUHnUHYLyLTD0NjMh4bCIIZ9qZPYQP1U8vDi4oMv4
+2024-06-19 08:14:42.932  INFO 26140 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:14:42.933 ERROR 26140 --- [http-nio-8080-exec-6] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:14:42.933  INFO 26140 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:14:42.945  INFO 26140 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 08:14:42.945  INFO 26140 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 08:14:45.350  INFO 26140 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc1OTY4Mn0.knpUHnUHYLyLTD0NjMh4bCIIZ9qZPYQP1U8vDi4oMv4
+2024-06-19 08:14:45.350  INFO 26140 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc1OTY4Mn0.knpUHnUHYLyLTD0NjMh4bCIIZ9qZPYQP1U8vDi4oMv4
+2024-06-19 08:14:45.351  INFO 26140 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 08:14:45.351  INFO 26140 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 08:14:45.456  INFO 26140 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:14:45.456 ERROR 26140 --- [http-nio-8080-exec-3] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:14:45.456  INFO 26140 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:14:47.773  INFO 26140 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:14:47.774 ERROR 26140 --- [http-nio-8080-exec-5] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:14:47.775  INFO 26140 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:14:50.279  INFO 26140 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:14:50.280 ERROR 26140 --- [http-nio-8080-exec-9] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:14:50.280  INFO 26140 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:14:51.682  INFO 26140 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:14:51.682 ERROR 26140 --- [http-nio-8080-exec-10] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:14:51.682  INFO 26140 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:14:53.457  INFO 26140 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:14:53.457 ERROR 26140 --- [http-nio-8080-exec-1] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:14:53.457  INFO 26140 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:15:40.022  INFO 27524 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 27524 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
+2024-06-19 08:15:40.026  INFO 27524 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-06-19 08:15:40.391  INFO 27524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-06-19 08:15:40.395  INFO 27524 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-19 08:15:40.395  INFO 27524 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-06-19 08:15:40.443  INFO 27524 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-19 08:15:40.447  INFO 27524 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 409 ms
+2024-06-19 08:15:40.707  INFO 27524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-19 08:15:40.711  INFO 27524 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 0.853 seconds (JVM running for 1.313)
+2024-06-19 08:15:43.150  INFO 27524 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-19 08:15:43.150  INFO 27524 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-19 08:15:43.150  INFO 27524 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-06-19 08:15:43.174  INFO 27524 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:15:43.174  INFO 27524 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:15:43.175  INFO 27524 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:15:43.183 ERROR 27524 --- [http-nio-8080-exec-5] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:15:43.183 ERROR 27524 --- [http-nio-8080-exec-3] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:15:43.183  INFO 27524 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:15:43.183  INFO 27524 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:15:43.183 ERROR 27524 --- [http-nio-8080-exec-4] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:15:43.183  INFO 27524 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:15:43.201  INFO 27524 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:15:43.201 ERROR 27524 --- [http-nio-8080-exec-6] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:15:43.201  INFO 27524 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:15:45.574  INFO 27524 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:15:45.574 ERROR 27524 --- [http-nio-8080-exec-7] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:15:45.574  INFO 27524 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:16:20.799  INFO 16968 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 16968 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
+2024-06-19 08:16:20.800  INFO 16968 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-06-19 08:16:21.192  INFO 16968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-06-19 08:16:21.196  INFO 16968 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-19 08:16:21.196  INFO 16968 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-06-19 08:16:21.248  INFO 16968 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-19 08:16:21.248  INFO 16968 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 433 ms
+2024-06-19 08:16:21.522  INFO 16968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-19 08:16:21.526  INFO 16968 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 0.893 seconds (JVM running for 1.388)
+2024-06-19 08:16:31.274  INFO 16968 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-19 08:16:31.275  INFO 16968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-19 08:16:31.275  INFO 16968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-06-19 08:16:31.312  INFO 16968 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:16:31.320 ERROR 16968 --- [http-nio-8080-exec-2] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:16:31.320  INFO 16968 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:16:39.034  INFO 16968 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-19 08:16:39.300  INFO 16968 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-19 08:16:41.586  INFO 16968 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc1OTc5OX0.y86OeBst1ak_0mLJRE5p-ULJ3aCFSmRGUpexPr3Jy7g
+2024-06-19 08:16:41.586  INFO 16968 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:16:41.586  INFO 16968 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc1OTc5OX0.y86OeBst1ak_0mLJRE5p-ULJ3aCFSmRGUpexPr3Jy7g
+2024-06-19 08:16:41.590 ERROR 16968 --- [http-nio-8080-exec-7] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:16:41.591  INFO 16968 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:16:41.644  INFO 16968 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 08:16:41.644  INFO 16968 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 08:16:42.923  INFO 16968 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc1OTc5OX0.y86OeBst1ak_0mLJRE5p-ULJ3aCFSmRGUpexPr3Jy7g
+2024-06-19 08:16:42.923  INFO 16968 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc1OTc5OX0.y86OeBst1ak_0mLJRE5p-ULJ3aCFSmRGUpexPr3Jy7g
+2024-06-19 08:16:42.927  INFO 16968 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:16:42.929  INFO 16968 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 08:16:42.929  INFO 16968 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 08:16:42.933 ERROR 16968 --- [http-nio-8080-exec-1] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:16:42.933  INFO 16968 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:16:44.113  INFO 16968 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:16:44.115 ERROR 16968 --- [http-nio-8080-exec-2] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:16:44.115  INFO 16968 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:16:45.040  INFO 16968 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:16:45.043 ERROR 16968 --- [http-nio-8080-exec-3] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:16:45.043  INFO 16968 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:17:58.649  INFO 16968 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:17:58.655 ERROR 16968 --- [http-nio-8080-exec-6] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:17:58.656  INFO 16968 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:18:14.968  INFO 16968 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:18:14.969 ERROR 16968 --- [http-nio-8080-exec-10] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:18:14.969  INFO 16968 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:18:15.419  INFO 16968 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:18:15.420 ERROR 16968 --- [http-nio-8080-exec-1] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:18:15.421  INFO 16968 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:18:24.355  INFO 9588 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 9588 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
+2024-06-19 08:18:24.355  INFO 9588 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-06-19 08:18:24.716  INFO 9588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-06-19 08:18:24.716  INFO 9588 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-19 08:18:24.716  INFO 9588 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-06-19 08:18:24.771  INFO 9588 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-19 08:18:24.771  INFO 9588 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 400 ms
+2024-06-19 08:18:25.054  INFO 9588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-19 08:18:25.058  INFO 9588 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 0.868 seconds (JVM running for 1.335)
+2024-06-19 08:18:26.098  INFO 9588 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-19 08:18:26.098  INFO 9588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-19 08:18:26.098  INFO 9588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-06-19 08:18:26.212  INFO 9588 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:18:26.212  INFO 9588 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:18:26.221 ERROR 9588 --- [http-nio-8080-exec-2] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:18:26.221  INFO 9588 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:18:26.221 ERROR 9588 --- [http-nio-8080-exec-3] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:18:26.221  INFO 9588 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:18:26.294  INFO 9588 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:18:26.295 ERROR 9588 --- [http-nio-8080-exec-4] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:18:26.295  INFO 9588 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:18:26.343  INFO 9588 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:18:26.345 ERROR 9588 --- [http-nio-8080-exec-5] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:18:26.345  INFO 9588 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:18:33.088  INFO 9588 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-19 08:18:33.379  INFO 9588 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-19 08:18:35.602  INFO 9588 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc1OTkxM30.lW5wbX-SUPt2uKVpPn-1sH_S_zMUYq0YZBYndWYmW80
+2024-06-19 08:18:35.602  INFO 9588 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc1OTkxM30.lW5wbX-SUPt2uKVpPn-1sH_S_zMUYq0YZBYndWYmW80
+2024-06-19 08:18:35.607  INFO 9588 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:18:35.609 ERROR 9588 --- [http-nio-8080-exec-10] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:18:35.610  INFO 9588 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:18:35.644  INFO 9588 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 08:18:35.651  INFO 9588 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 08:18:39.379  INFO 9588 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc1OTkxM30.lW5wbX-SUPt2uKVpPn-1sH_S_zMUYq0YZBYndWYmW80
+2024-06-19 08:18:39.379  INFO 9588 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc1OTkxM30.lW5wbX-SUPt2uKVpPn-1sH_S_zMUYq0YZBYndWYmW80
+2024-06-19 08:18:39.382  INFO 9588 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 08:18:39.382  INFO 9588 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 08:18:39.480  INFO 9588 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:18:39.485 ERROR 9588 --- [http-nio-8080-exec-2] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:18:39.486  INFO 9588 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:18:42.349  INFO 9588 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:18:42.351 ERROR 9588 --- [http-nio-8080-exec-5] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:18:42.351  INFO 9588 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:18:43.755  INFO 9588 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:18:43.757 ERROR 9588 --- [http-nio-8080-exec-6] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:18:43.757  INFO 9588 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:18:44.984  INFO 9588 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:18:44.985 ERROR 9588 --- [http-nio-8080-exec-7] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:18:44.986  INFO 9588 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:56:58.960  INFO 15140 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 15140 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
+2024-06-19 08:56:58.961  INFO 15140 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-06-19 08:56:59.464  INFO 15140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-06-19 08:56:59.469  INFO 15140 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-19 08:56:59.469  INFO 15140 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-06-19 08:56:59.537  INFO 15140 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-19 08:56:59.537  INFO 15140 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 557 ms
+2024-06-19 08:56:59.883  INFO 15140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-19 08:56:59.888  INFO 15140 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 1.14 seconds (JVM running for 1.651)
+2024-06-19 08:57:10.231  INFO 15140 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-19 08:57:10.231  INFO 15140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-19 08:57:10.231  INFO 15140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-06-19 08:57:10.347  INFO 15140 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:57:10.475 ERROR 15140 --- [http-nio-8080-exec-2] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:57:10.475  INFO 15140 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:57:12.992  INFO 15140 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:57:12.992  INFO 15140 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:57:12.992  INFO 15140 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:57:12.995 ERROR 15140 --- [http-nio-8080-exec-6] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:57:12.996  INFO 15140 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:57:12.997 ERROR 15140 --- [http-nio-8080-exec-5] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:57:12.998  INFO 15140 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:57:12.997 ERROR 15140 --- [http-nio-8080-exec-4] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:57:12.998  INFO 15140 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:57:13.019  INFO 15140 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:57:13.023 ERROR 15140 --- [http-nio-8080-exec-7] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:57:13.023  INFO 15140 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:57:23.847  INFO 15140 --- [http-nio-8080-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-19 08:57:24.097  INFO 15140 --- [http-nio-8080-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-19 08:57:26.310  INFO 15140 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MjI0NH0.SxztEzhye6LOCXM08g9mKqODrnC6GcohQFImLTVYnQw
+2024-06-19 08:57:26.310  INFO 15140 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MjI0NH0.SxztEzhye6LOCXM08g9mKqODrnC6GcohQFImLTVYnQw
+2024-06-19 08:57:26.319  INFO 15140 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:57:26.321 ERROR 15140 --- [http-nio-8080-exec-1] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:57:26.321  INFO 15140 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:57:26.358  INFO 15140 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 08:57:26.369  INFO 15140 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 08:58:35.293  INFO 15140 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MjI0NH0.SxztEzhye6LOCXM08g9mKqODrnC6GcohQFImLTVYnQw
+2024-06-19 08:58:35.293  INFO 15140 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MjI0NH0.SxztEzhye6LOCXM08g9mKqODrnC6GcohQFImLTVYnQw
+2024-06-19 08:58:35.299  INFO 15140 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 08:58:35.300  INFO 15140 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 08:58:35.301  INFO 15140 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:58:35.304 ERROR 15140 --- [http-nio-8080-exec-8] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:58:35.304  INFO 15140 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 08:59:00.684  INFO 15140 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MjI0NH0.SxztEzhye6LOCXM08g9mKqODrnC6GcohQFImLTVYnQw
+2024-06-19 08:59:00.682  INFO 15140 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MjI0NH0.SxztEzhye6LOCXM08g9mKqODrnC6GcohQFImLTVYnQw
+2024-06-19 08:59:00.685  INFO 15140 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 08:59:00.686  INFO 15140 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 08:59:00.687  INFO 15140 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 08:59:00.687 ERROR 15140 --- [http-nio-8080-exec-6] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 08:59:00.688  INFO 15140 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 09:02:41.836  INFO 29576 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 29576 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
+2024-06-19 09:02:41.837  INFO 29576 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-06-19 09:02:42.226  INFO 29576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-06-19 09:02:42.230  INFO 29576 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-19 09:02:42.230  INFO 29576 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-06-19 09:02:42.284  INFO 29576 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-19 09:02:42.284  INFO 29576 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 431 ms
+2024-06-19 09:02:42.560  INFO 29576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-19 09:02:42.565  INFO 29576 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 0.892 seconds (JVM running for 1.432)
+2024-06-19 09:03:17.068  INFO 29576 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-19 09:03:17.069  INFO 29576 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-19 09:03:17.069  INFO 29576 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-06-19 09:03:17.182  INFO 29576 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 09:03:17.238 ERROR 29576 --- [http-nio-8080-exec-3] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 09:03:17.239  INFO 29576 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 09:03:21.059  INFO 29576 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-19 09:03:21.357  INFO 29576 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-19 09:03:23.661  INFO 29576 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MjYwMX0.qRA75PIu3hFIofhbH20TAPiJrps93UCgB_g_Lpx8gy8
+2024-06-19 09:03:23.671  INFO 29576 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 09:03:23.671  INFO 29576 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MjYwMX0.qRA75PIu3hFIofhbH20TAPiJrps93UCgB_g_Lpx8gy8
+2024-06-19 09:03:23.675 ERROR 29576 --- [http-nio-8080-exec-8] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 09:03:23.675  INFO 29576 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 09:03:23.708  INFO 29576 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:03:23.722  INFO 29576 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:03:24.691  INFO 29576 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MjYwMX0.qRA75PIu3hFIofhbH20TAPiJrps93UCgB_g_Lpx8gy8
+2024-06-19 09:03:24.692  INFO 29576 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MjYwMX0.qRA75PIu3hFIofhbH20TAPiJrps93UCgB_g_Lpx8gy8
+2024-06-19 09:03:24.694  INFO 29576 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 09:03:24.699  INFO 29576 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:03:24.701 ERROR 29576 --- [http-nio-8080-exec-7] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 09:03:24.701  INFO 29576 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 09:03:24.702  INFO 29576 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:03:55.287  INFO 29576 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 09:03:55.292 ERROR 29576 --- [http-nio-8080-exec-6] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 09:03:55.292  INFO 29576 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 09:03:56.163  INFO 29576 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MjYwMX0.qRA75PIu3hFIofhbH20TAPiJrps93UCgB_g_Lpx8gy8
+2024-06-19 09:03:56.163  INFO 29576 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MjYwMX0.qRA75PIu3hFIofhbH20TAPiJrps93UCgB_g_Lpx8gy8
+2024-06-19 09:03:56.166  INFO 29576 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:03:56.166  INFO 29576 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:03:56.171  INFO 29576 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 09:03:56.175 ERROR 29576 --- [http-nio-8080-exec-2] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 09:03:56.176  INFO 29576 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 09:05:34.324  INFO 14368 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 14368 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
+2024-06-19 09:05:34.325  INFO 14368 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-06-19 09:05:34.702  INFO 14368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-06-19 09:05:34.705  INFO 14368 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-19 09:05:34.705  INFO 14368 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-06-19 09:05:34.756  INFO 14368 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-19 09:05:34.756  INFO 14368 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 416 ms
+2024-06-19 09:05:35.035  INFO 14368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-19 09:05:35.040  INFO 14368 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 0.879 seconds (JVM running for 1.401)
+2024-06-19 09:05:38.788  INFO 14368 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-19 09:05:38.789  INFO 14368 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-19 09:05:38.789  INFO 14368 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-06-19 09:05:38.796  INFO 14368 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 09:05:38.803 ERROR 14368 --- [http-nio-8080-exec-1] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 09:05:38.803  INFO 14368 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 09:05:45.757  INFO 14368 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-19 09:05:46.038  INFO 14368 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-19 09:05:48.416  INFO 14368 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2Mjc0Nn0.QhQzutoGqVLpw9Xc_WbNfZXHxs5g6kazQYLtXehH9O8
+2024-06-19 09:05:48.420  INFO 14368 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2Mjc0Nn0.QhQzutoGqVLpw9Xc_WbNfZXHxs5g6kazQYLtXehH9O8
+2024-06-19 09:05:48.431  INFO 14368 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 09:05:48.442 ERROR 14368 --- [http-nio-8080-exec-5] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 09:05:48.443  INFO 14368 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 09:05:48.502  INFO 14368 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:05:48.502  INFO 14368 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:05:51.066  INFO 14368 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2Mjc0Nn0.QhQzutoGqVLpw9Xc_WbNfZXHxs5g6kazQYLtXehH9O8
+2024-06-19 09:05:51.066  INFO 14368 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2Mjc0Nn0.QhQzutoGqVLpw9Xc_WbNfZXHxs5g6kazQYLtXehH9O8
+2024-06-19 09:05:51.070  INFO 14368 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:05:51.070  INFO 14368 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:05:51.070  INFO 14368 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 09:05:51.075 ERROR 14368 --- [http-nio-8080-exec-9] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 09:05:51.075  INFO 14368 --- [http-nio-8080-exec-9] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 09:12:10.181  INFO 24136 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 24136 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
+2024-06-19 09:12:10.183  INFO 24136 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-06-19 09:12:10.593  INFO 24136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-06-19 09:12:10.596  INFO 24136 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-19 09:12:10.596  INFO 24136 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-06-19 09:12:10.645  INFO 24136 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-19 09:12:10.645  INFO 24136 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 445 ms
+2024-06-19 09:12:10.920  INFO 24136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-19 09:12:10.924  INFO 24136 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 0.925 seconds (JVM running for 1.408)
+2024-06-19 09:12:14.440  INFO 24136 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-19 09:12:14.440  INFO 24136 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-19 09:12:14.441  INFO 24136 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-06-19 09:12:14.448  INFO 24136 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 09:12:14.454 ERROR 24136 --- [http-nio-8080-exec-1] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 09:12:14.454  INFO 24136 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 09:12:16.221  INFO 24136 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 09:12:16.222 ERROR 24136 --- [http-nio-8080-exec-8] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 09:12:16.222  INFO 24136 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 09:12:20.415  INFO 24136 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-19 09:12:20.665  INFO 24136 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-19 09:12:22.917  INFO 24136 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MzE0MH0.3pRJTyKd4HbRVoIhyIEy0oQXhfrdTeAwhf-9bo_qVac
+2024-06-19 09:12:22.918  INFO 24136 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MzE0MH0.3pRJTyKd4HbRVoIhyIEy0oQXhfrdTeAwhf-9bo_qVac
+2024-06-19 09:12:22.925  INFO 24136 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 09:12:22.927 ERROR 24136 --- [http-nio-8080-exec-2] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 09:12:22.928  INFO 24136 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 09:12:22.975  INFO 24136 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:12:22.981  INFO 24136 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:12:28.036  INFO 24136 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 09:12:28.036  INFO 24136 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MzE0MH0.3pRJTyKd4HbRVoIhyIEy0oQXhfrdTeAwhf-9bo_qVac
+2024-06-19 09:12:28.036  INFO 24136 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MzE0MH0.3pRJTyKd4HbRVoIhyIEy0oQXhfrdTeAwhf-9bo_qVac
+2024-06-19 09:12:28.039  INFO 24136 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:12:28.039  INFO 24136 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:12:28.039 ERROR 24136 --- [http-nio-8080-exec-7] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 09:12:28.043  INFO 24136 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 09:12:29.109  INFO 24136 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 09:12:29.121 ERROR 24136 --- [http-nio-8080-exec-8] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 09:12:29.121  INFO 24136 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 09:12:30.107  INFO 24136 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 09:12:30.109 ERROR 24136 --- [http-nio-8080-exec-6] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 09:12:30.109  INFO 24136 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 09:12:47.436  INFO 24136 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MzE0MH0.3pRJTyKd4HbRVoIhyIEy0oQXhfrdTeAwhf-9bo_qVac
+2024-06-19 09:12:47.442  INFO 24136 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:12:47.475  INFO 24136 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MzE0MH0.3pRJTyKd4HbRVoIhyIEy0oQXhfrdTeAwhf-9bo_qVac
+2024-06-19 09:12:47.475  INFO 24136 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MzE0MH0.3pRJTyKd4HbRVoIhyIEy0oQXhfrdTeAwhf-9bo_qVac
+2024-06-19 09:12:47.478  INFO 24136 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 09:12:47.478  INFO 24136 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:12:47.479  INFO 24136 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:12:47.482 ERROR 24136 --- [http-nio-8080-exec-6] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 09:12:47.482  INFO 24136 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 09:13:06.914  INFO 24136 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MzE0MH0.3pRJTyKd4HbRVoIhyIEy0oQXhfrdTeAwhf-9bo_qVac
+2024-06-19 09:13:06.914  INFO 24136 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:13:06.914  INFO 24136 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MzE0MH0.3pRJTyKd4HbRVoIhyIEy0oQXhfrdTeAwhf-9bo_qVac
+2024-06-19 09:13:06.914  INFO 24136 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:13:06.914  INFO 24136 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 09:13:06.914 ERROR 24136 --- [http-nio-8080-exec-8] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 09:13:06.914  INFO 24136 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 09:18:28.555  INFO 24136 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 09:18:28.561 ERROR 24136 --- [http-nio-8080-exec-3] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 09:18:28.561  INFO 24136 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 09:19:49.617  INFO 24136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-19 09:19:49.649  INFO 24136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-19 09:33:08.078  INFO 21080 --- [main] c.e.springblog.SpringBlogApplication     : Starting SpringBlogApplication using Java 1.8.0_192 on DESKTOP-K4OBCKA with PID 21080 (D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog\target\classes started by ZhangXing in D:\百度云同步\BaiduSyncdisk\Java&C++相关课件资料\java-c-traningfile\JavaXM\SpringBlog)
+2024-06-19 09:33:08.080  INFO 21080 --- [main] c.e.springblog.SpringBlogApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-06-19 09:33:08.479  INFO 21080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-06-19 09:33:08.482  INFO 21080 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-19 09:33:08.483  INFO 21080 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-06-19 09:33:08.534  INFO 21080 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-19 09:33:08.534  INFO 21080 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 438 ms
+2024-06-19 09:33:08.814  INFO 21080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-19 09:33:08.818  INFO 21080 --- [main] c.e.springblog.SpringBlogApplication     : Started SpringBlogApplication in 0.916 seconds (JVM running for 1.488)
+2024-06-19 09:33:14.043  INFO 21080 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-19 09:33:14.043  INFO 21080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-19 09:33:14.043  INFO 21080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-06-19 09:33:14.083  INFO 21080 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MzE0MH0.3pRJTyKd4HbRVoIhyIEy0oQXhfrdTeAwhf-9bo_qVac
+2024-06-19 09:33:14.083  INFO 21080 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MzE0MH0.3pRJTyKd4HbRVoIhyIEy0oQXhfrdTeAwhf-9bo_qVac
+2024-06-19 09:33:14.084  INFO 21080 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 09:33:14.085 ERROR 21080 --- [http-nio-8080-exec-5] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 09:33:14.085  INFO 21080 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 09:33:14.351  INFO 21080 --- [http-nio-8080-exec-2] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:33:14.351  INFO 21080 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:33:14.351  INFO 21080 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-19 09:33:14.408  INFO 21080 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-19 09:33:15.440  INFO 21080 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MzE0MH0.3pRJTyKd4HbRVoIhyIEy0oQXhfrdTeAwhf-9bo_qVac
+2024-06-19 09:33:15.441  INFO 21080 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MzE0MH0.3pRJTyKd4HbRVoIhyIEy0oQXhfrdTeAwhf-9bo_qVac
+2024-06-19 09:33:15.441  INFO 21080 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:33:15.441  INFO 21080 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:33:15.441  INFO 21080 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 09:33:15.441 ERROR 21080 --- [http-nio-8080-exec-10] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 09:33:15.441  INFO 21080 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 09:33:16.581  INFO 21080 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MzE0MH0.3pRJTyKd4HbRVoIhyIEy0oQXhfrdTeAwhf-9bo_qVac
+2024-06-19 09:33:16.581  INFO 21080 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MzE0MH0.3pRJTyKd4HbRVoIhyIEy0oQXhfrdTeAwhf-9bo_qVac
+2024-06-19 09:33:16.581  INFO 21080 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 09:33:16.581 ERROR 21080 --- [http-nio-8080-exec-5] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 09:33:16.581  INFO 21080 --- [http-nio-8080-exec-5] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 09:33:16.581  INFO 21080 --- [http-nio-8080-exec-1] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:33:16.581  INFO 21080 --- [http-nio-8080-exec-3] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:33:29.581  INFO 21080 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 09:33:29.582 ERROR 21080 --- [http-nio-8080-exec-4] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 09:33:29.582  INFO 21080 --- [http-nio-8080-exec-4] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 09:33:31.388  INFO 21080 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MzE0MH0.3pRJTyKd4HbRVoIhyIEy0oQXhfrdTeAwhf-9bo_qVac
+2024-06-19 09:33:31.389  INFO 21080 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : 从header中获取token:eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGF5IiwiaWQiOjEsImV4cCI6MTcxODc2MzE0MH0.3pRJTyKd4HbRVoIhyIEy0oQXhfrdTeAwhf-9bo_qVac
+2024-06-19 09:33:31.389  INFO 21080 --- [http-nio-8080-exec-6] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:33:31.390  INFO 21080 --- [http-nio-8080-exec-10] c.e.springblog.config.LoginInterceptor   : token有效，放行请求
+2024-06-19 09:33:31.398  INFO 21080 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 09:33:31.398 ERROR 21080 --- [http-nio-8080-exec-7] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 09:33:31.398  INFO 21080 --- [http-nio-8080-exec-7] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 09:33:34.139  INFO 21080 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : 从header中获取token:null
+2024-06-19 09:33:34.139 ERROR 21080 --- [http-nio-8080-exec-8] com.example.springblog.utils.JwtUtils    : token校验失败, token:
+2024-06-19 09:33:34.139  INFO 21080 --- [http-nio-8080-exec-8] c.e.springblog.config.LoginInterceptor   : token无效，拦截请求
+2024-06-19 09:33:57.007  INFO 21080 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-19 09:33:57.007  INFO 21080 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
