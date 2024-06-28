@@ -1,0 +1,11 @@
+spring:
+  redis:
+    database: 0 # 数据库(0-15)
+    host: 116.204.27.166 # IP地址
+    password: 123456 # 密码
+    port: 6379 # 端口号
+    jedis:
+      pool: # 连接池配置
+        max-active: 8 # 最大连接数
+        max-idle: 8 # 最大空闲数
+        min-idle: 1 # 最小空闲数
