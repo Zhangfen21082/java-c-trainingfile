@@ -14,6 +14,7 @@ public class BlogInfo {
     private Integer deleteFlag;
     private Date createTime;
     private Date updateTime;
+    private boolean isLoginUser;
 
     public BlogInfo(){
 

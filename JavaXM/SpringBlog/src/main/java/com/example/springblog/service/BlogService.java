@@ -22,4 +22,8 @@ public class BlogService {
     public Integer publishBlog(BlogInfo blogInfo) {
         return blogMapper.insertNewBlog(blogInfo);
     }
+
+    public Integer updateBlog(BlogInfo blogInfo) {
+        return blogMapper.updateBlog(blogInfo);
+    }
 }
