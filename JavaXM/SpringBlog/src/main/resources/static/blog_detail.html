@@ -112,7 +112,18 @@
         }
 
         function deleteBlog() {
-            alert("删除博客");
+            if(confirm("确定删除这篇博客吗?")){
+                $.ajax({
+                    type:"post",
+                    url:"/blog/delete"+location.search,
+                    success:function(result){
+                        if(result.code==200 && result.data==true){
+                            location.href = "blog_list.html";
+                        }
+                    }
+                });
+            }
+
         }
     </script>
 </body>

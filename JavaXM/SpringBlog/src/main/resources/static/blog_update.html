@@ -57,6 +57,7 @@
                     content:$("#content").val()
                 },
                 success: function (result) {
+                    console.log(result.code)
                     if (result != null && result.code == 200 && result.data == true) {
                         alert("更新成功")
                         location.href = "blog_list.html";

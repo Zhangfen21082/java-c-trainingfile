@@ -4,6 +4,7 @@ import com.example.springblog.model.Result;
 import com.example.springblog.model.UserInfo;
 import com.example.springblog.service.UserService;
 import com.example.springblog.utils.JwtUtils;
+import com.example.springblog.utils.SecurityUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,7 +37,7 @@ public class UserController {
         }
 
         // 密码校验
-        if(!password.equals(userInfo.getPassWord())) {
+        if (!SecurityUtils.verify(password, userInfo.getPassWord())){
             return Result.fail("密码错误");
         }
 
